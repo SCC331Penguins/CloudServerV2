@@ -7,8 +7,10 @@ from routes.user import user
 from routes.api import api
 from routes.router import router_route
 from routes.sensor import sensor_route
+from routes.admin import admin_route
 from routes.historic import historic
 import logging
+import config
 
 logger = logging.getLogger()
 fhandler = logging.FileHandler(filename='mylog.log', mode='a')
@@ -48,6 +50,7 @@ def register_blueprints(app):
     app.register_blueprint(api)
     app.register_blueprint(router_route)
     app.register_blueprint(sensor_route)
+    app.register_blueprint(admin_route)
     app.register_blueprint(historic)
 
 
@@ -55,5 +58,5 @@ app = create_app()
 
 if __name__ == '__main__':
     logger.info("Starting Flask Server")
-    app.run(debug=True, host="192.168.0.110",
+    app.run(debug=True, host=config.IP,
             port=5001, threaded=True, use_reloader=False)

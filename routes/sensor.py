@@ -3,7 +3,7 @@ from handlers.database_handler import DatabaseHandler
 from util.auth import authenticator
 from util.debug import print_request
 from handlers.message_creator import MessageCreator
-from MQTT.mqtt_client import send_message
+from MQTT.mqtt_client import send_message, send_message_admin
 
 sensor_route = Blueprint('sensor_route', __name__, url_prefix='/sensor')
 
@@ -15,6 +15,8 @@ sensor_route = Blueprint('sensor_route', __name__, url_prefix='/sensor')
 @print_request
 def get_sensors():
     result = DatabaseHandler().get_router_sensors(request.json['router_id'])
+    send_message_admin(
+        "GET SENSOR", "By user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(request.json['router_id']))
     return jsonify(result), 200
 
 
@@ -30,4 +32,5 @@ def set_config():
         payload.append({"id": sensor['id'], "config": sensor['config']})
     message = MessageCreator(MessageCreator.UPDATE_SENSORS, payload)
     send_message(request.json['router_id'], message)
+    send_message_admin("POST SENSOR", "By user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(request.json['router_id']))
     return jsonify(True), 200

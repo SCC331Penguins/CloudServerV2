@@ -38,8 +38,8 @@ class Router(db.Model):
 
 # UserRouters Table
 class UserRouters(db.Model):
-    router_id = db.Column(db.String(20), db.ForeignKey(Router.router_id), primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey(Users.id), primary_key=True)
+    router_id = db.Column(db.String(20), primary_key=True)
+    user_id = db.Column(db.Integer, primary_key=True)
 
     def __init__(self, router_id, user_id):
         self.router_id = router_id
@@ -63,8 +63,8 @@ class Sensor(db.Model):
 
 
 class RouterSensors(db.Model):
-    router_id = db.Column(db.String(20), db.ForeignKey(Router.router_id), primary_key=True)
-    sensor_id = db.Column(db.String(100), db.ForeignKey(Sensor.sensor_id), primary_key=True)
+    router_id = db.Column(db.String(20), primary_key=True)
+    sensor_id = db.Column(db.String(100), primary_key=True)
 
     def __init__(self, router_id, sensor_id):
         self.router_id = router_id
@@ -79,7 +79,7 @@ class Actuator(db.Model):
     actuator_id = db.Column(db.String(20), unique=True)
     type = db.Column(db.String(20), nullable=False)
     functions = db.Column(db.Text, nullable=False)
-    router_id = db.Column(db.String(20), db.ForeignKey(Router.router_id), nullable=False)
+    router_id = db.Column(db.String(20), nullable=False)
 
     def __init__(self, actuator_id, router_id, type, functions):
         self.actuator_id = actuator_id
@@ -93,7 +93,7 @@ class Actuator(db.Model):
 
 class Script(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    router_id = db.Column(db.String, db.ForeignKey(Router.router_id), nullable=False)
+    router_id = db.Column(db.String, nullable=False)
     script = db.Column(db.Text, nullable=False, unique=True)
 
     def __init__(self, router_id, script):
@@ -106,7 +106,7 @@ class Script(db.Model):
 
 class PhoneToken(db.Model):
     token = db.Column(db.String(100), primary_key=True)
-    router_id = db.Column(db.String(30), db.ForeignKey(Router.router_id))
+    router_id = db.Column(db.String(30))
 
     def __init__(self, token, router_id):
         self.router_id = router_id

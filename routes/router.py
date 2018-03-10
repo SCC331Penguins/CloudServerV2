@@ -2,7 +2,7 @@ from flask import jsonify, request, Blueprint
 from handlers.database_handler import DatabaseHandler
 from util.auth import authenticator
 from util.debug import print_request, print_request_short
-from MQTT.mqtt_client import send_message
+from MQTT.mqtt_client import send_message, send_message_admin
 from handlers.message_creator import MessageCreator
 
 
@@ -15,6 +15,7 @@ router_route = Blueprint('router_route', __name__, url_prefix='/router')
 @print_request
 def get_routers():
     res = DatabaseHandler().get_user_routers(request.json['token'])
+    send_message_admin("GET ROUTER", "Get router request from user " + DatabaseHandler().get_user_from_id(request.json['token']))
     return jsonify(res), 200
 
 
@@ -34,6 +35,7 @@ def set_script():
             scripts_list.append(x.script)
         message = MessageCreator(MessageCreator.UPDATE_SCRIPT, scripts_list)
         send_message(router_id, message)
+    send_message_admin("POST SCRIPT", "Nw script added by user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(router_id))
     return jsonify(res), 200
 
 
@@ -53,4 +55,6 @@ def get_script():
 @print_request
 def get_actuators():
     res = DatabaseHandler().get_actuators(request.json['router_id'])
+    send_message_admin(
+        "GET ACTUATOR", "by user " + DatabaseHandler().get_user_from_id(request.json['token']) + " from router " + str(request.json['router_id']))
     return jsonify(res), 200
