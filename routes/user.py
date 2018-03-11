@@ -2,7 +2,7 @@ from flask import jsonify, request, Blueprint
 from handlers.database_handler import DatabaseHandler
 from util.auth import authenticator
 from util.debug import print_request
-from MQTT.mqtt_client import send_message_admin
+from MQTT.mqtt_client import send_message_admin, send_user_update
 
 user = Blueprint('user', __name__, url_prefix='/user')
 
@@ -28,8 +28,11 @@ def register():
     username = request.json['username']
     password = request.json['password']
     resp = DatabaseHandler().register_user(username, password)
-    if resp is True:
+    if resp is not False:
         send_message_admin("USER REGISTER", "New user " + str(username))
+        print(resp)
+        send_user_update(resp['username'], remove=False, id=resp['id'])
+        resp = True
     return jsonify(resp), 200
 
 

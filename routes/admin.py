@@ -5,7 +5,10 @@ from handlers.message_creator import MessageCreator
 from util.debug import print_request
 import uuid
 import config
-from MQTT.mqtt_client import open_admin_link, close_admin_link, send_message_admin
+from MQTT.mqtt_client import (open_admin_link, close_admin_link,
+                              send_message_admin, send_router_update,
+                              send_sensor_update, send_user_update,
+                              send_admin_update)
 
 admin_route = Blueprint('admin_route', __name__, url_prefix="/admin")
 
@@ -80,15 +83,63 @@ def close_link():
 @admin_route.route("/add_router", methods=['POST'])
 @requires_admin
 def add_router():
-    return jsonify(result=DatabaseHandler().add_router(request.json['router_id'])), 200
+    result = DatabaseHandler().add_router(request.json['router_id'])
+    if result is True:
+        send_router_update(request.json['router_id'], remove=False)
+    return jsonify(result=result), 200
 
 
-# TODO remove router references
+@admin_route.route("/add_sensor", methods=['POST'])
+@requires_admin
+@print_request
+def add_sensor():
+    result = DatabaseHandler().add_sensor(request.json['sensor_id'])
+    if result is True:
+        send_sensor_update(request.json['sensor_id'], remove=False)
+    return jsonify(result=result), 200
+
+
+@admin_route.route("/get_users", methods=['POST'])
+@requires_admin
+@print_request
+def get_users():
+    result = DatabaseHandler().get_users_admin()
+    return jsonify(result), 200
+
+
+@admin_route.route("/set_user_admin", methods=['POST'])
+@requires_admin
+@print_request
+def set_user_admin():
+    DatabaseHandler().set_user_admin(request.json['username'], request.json['admin'])
+    send_admin_update(request.json['username'], request.json['admin'])
+    return jsonify(result=True), 200
+
+
+@admin_route.route("/remove_user", methods=['POST'])
+@requires_admin
+@print_request
+def remove_user():
+    DatabaseHandler().remove_user(request.json['username'])
+    send_user_update(request.json['username'], remove=True)
+    return jsonify(result=True), 200
+
+
+@admin_route.route("/remove_sensor", methods=['POST'])
+@requires_admin
+@print_request
+def remove_sensor():
+    DatabaseHandler().remove_sensor(request.json['sensor_id'])
+    send_sensor_update(request.json['sensor_id'], remove=True)
+    return jsonify(result=True), 200
+
+
 @admin_route.route("/remove_router", methods=['POST'])
 @print_request
 @requires_admin
 def remove_router():
     DatabaseHandler().remove_router(request.json['router_id'])
+    send_router_update(request.json['router_id'], remove=True)
     return jsonify(result=True), 200
 
 

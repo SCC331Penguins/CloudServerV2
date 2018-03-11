@@ -1,6 +1,7 @@
 from database.database import db
 from passlib.apps import custom_app_context as pwd_context
 from util.auth import authenticator
+from sqlalchemy.exc import IntegrityError
 import time
 
 """
@@ -100,8 +101,10 @@ class DatabaseHandler():
             if self.user_exists(username=username):
                 return False
             password = pwd_context.encrypt(password)
+            user = self.Users(username, password)
             self.add(self.Users(username, password))
-            return True
+            id = len(db.session.query(self.Users).all())
+            return {"id": id, "username": username}
 
         # Login User
         def login_user(self, username, password):
@@ -153,11 +156,40 @@ class DatabaseHandler():
             return sensor_list
 
         def add_router(self, router_id):
-            self.add(self.Router(router_id))
+            return self.add(self.Router(router_id))
+
+        def add(self, model):
+            db.session.add(model)
+            try:
+                db.session.commit()
+            except IntegrityError as err:
+                return False
             return True
+
+        def set_user_admin(self, username, admin):
+            user = db.session.query(self.Users).filter(self.Users.username == username).first()
+            user.is_admin = admin
+            db.session.commit()
+
+        def get_users_admin(self):
+            users = db.session.query(self.Users).all()
+            if len(users) == 0:
+                print("None")
+                return []
+            users_list = []
+            for user in users[:]:
+                print(user.username)
+                routers = len(DatabaseHandler().get_user_routers(user.id))
+                user_dict = {"id": user.id, "username": user.username, "is_admin": user.is_admin, "routers": routers}
+                users_list.append(user_dict)
+            return users_list
 
         def remove_router(self, router_id):
             db.session.query(self.Router).filter(self.Router.router_id == router_id).delete()
+            db.session.commit()
+
+        def remove_sensor(self, sensor_id):
+            db.session.query(self.Sensor).filter(self.Sensor.sensor_id == sensor_id).delete()
             db.session.commit()
 
         def get_sensors_router(self, sensor_id):
@@ -229,6 +261,13 @@ class DatabaseHandler():
                 router_list.append(dic)
             return router_list
 
+        def add_sensor(self, sensor_id):
+            return self.add(self.Sensor(sensor_id, 0))
+
+        def remove_user(self, username):
+            db.session.query(self.Users).filter(self.Users.username == username).delete()
+            db.session.commit()
+
         def get_users(self):
             return db.session.query(self.Users).all()
 
@@ -243,6 +282,8 @@ class DatabaseHandler():
             if router is None:
                 return None
             user = db.session.query(self.Users).filter(self.Users.id == router.user_id).first()
+            if user is None:
+                return "Removed User"
             return user.username
 
         # Check multiple query result
@@ -250,7 +291,3 @@ class DatabaseHandler():
             if len(result) == 0:
                 return None
             return result
-
-        def add(self, model):
-            db.session.add(model)
-            db.session.commit()

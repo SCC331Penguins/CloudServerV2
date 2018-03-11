@@ -40,6 +40,70 @@ def close_admin_link(topic_name):
     client.unsubscribe(topic_name)
 
 
+"""
+        "last_heard": 1520610729,
+        "online": false,
+        "owner": "Stouty",
+        "router_id": "SCC33102_R01",
+        "sensors": 4
+"""
+
+
+def send_router_update(router, remove=None):
+    if remove is None:
+        return
+    if remove is False:
+        payload = {"type": "ROUTERUPDADD"}
+        dic = {'router_id': router, 'sensors': 0, 'owner': None, 'online': False, 'last_heard': 0}
+        payload.update(dic)
+    else:
+        payload = {"type": "ROUTERUPDREM"}
+        dic = {'router_id': router}
+        payload.update(dic)
+    if config.DEBUG_MQTT is True:
+        print(payload)
+    for channel in config.ADMIN_CHANNELS[:]:
+        client.publish(channel, json.dumps(payload))
+
+
+def send_sensor_update(sensor_id, remove=None):
+    if remove is None:
+        return
+    if remove is False:
+        payload = {"type": "SENSORUPDADD"}
+        dic = {"sensor_id": sensor_id, "config": 0, "router": None}
+        payload.update(dic)
+    else:
+        payload = {"type": "SENSORUPDREM"}
+        dic = {"sensor_id": sensor_id}
+        payload.update(dic)
+    if config.DEBUG_MQTT is True:
+        print(payload)
+    for channel in config.ADMIN_CHANNELS[:]:
+        client.publish(channel, json.dumps(payload))
+
+
+def send_user_update(username, remove=None, id=None):
+    if remove is None:
+        return
+    if remove is False:
+        payload = {"type": "USERUPDADD", "username": username, "id": id}
+    else:
+        payload = {"type": "USERUPDREM", "username": username}
+    if config.DEBUG_MQTT is True:
+        print(payload)
+    for channel in config.ADMIN_CHANNELS[:]:
+        client.publish(channel, json.dumps(payload))
+
+
+def send_admin_update(username, admin):
+    payload = {"type": "USERUPDADM", "username": username, "admin": admin}
+    if config.DEBUG_MQTT is True:
+        print(payload)
+    for channel in config.ADMIN_CHANNELS[:]:
+        client.publish(channel, json.dumps(payload))
+
+
 def send_message_admin(type, info):
     d = datetime.utcnow()
     unixtime = calendar.timegm(d.utctimetuple())
