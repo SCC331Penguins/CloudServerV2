@@ -152,6 +152,14 @@ class DatabaseHandler():
                 sensor_list.append(dic)
             return sensor_list
 
+        def add_router(self, router_id):
+            self.add(self.Router(router_id))
+            return True
+
+        def remove_router(self, router_id):
+            db.session.query(self.Router).filter(self.Router.router_id == router_id).delete()
+            db.session.commit()
+
         def get_sensors_router(self, sensor_id):
             router = db.session.query(self.RouterSensors).filter(self.RouterSensors.sensor_id == sensor_id).first()
             if router is None:
@@ -216,7 +224,8 @@ class DatabaseHandler():
             for x in routers[:]:
                 res = self.get_router_sensors(x.router_id)
                 res1 = self.get_router_owner(x.router_id)
-                dic = {'router_id': x.router_id, 'sensors': len(res), 'owner': res1}
+                online = self.get_router_status(x.router_id)
+                dic = {'router_id': x.router_id, 'sensors': len(res), 'owner': res1, 'online': online, 'last_heard': x.last_heard}
                 router_list.append(dic)
             return router_list
 

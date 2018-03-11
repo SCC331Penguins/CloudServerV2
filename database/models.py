@@ -31,6 +31,7 @@ class Router(db.Model):
 
     def __init__(self, router_id):
         self.router_id = router_id
+        self.last_heard = 0
 
     def __repr__(self):
         return '<Router: '+str(self.router_id)+', LP: '+str(self.last_heard)+'>'

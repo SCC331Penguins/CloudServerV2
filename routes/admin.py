@@ -77,6 +77,21 @@ def close_link():
     close_admin_link(topic_name)
 
 
+@admin_route.route("/add_router", methods=['POST'])
+@requires_admin
+def add_router():
+    return jsonify(result=DatabaseHandler().add_router(request.json['router_id'])), 200
+
+
+# TODO remove router references
+@admin_route.route("/remove_router", methods=['POST'])
+@print_request
+@requires_admin
+def remove_router():
+    DatabaseHandler().remove_router(request.json['router_id'])
+    return jsonify(result=True), 200
+
+
 @admin_route.route("/test", methods=['POST'])
 @requires_admin
 @print_request
