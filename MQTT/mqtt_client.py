@@ -30,8 +30,14 @@ def send_message(topic, payload):
     client.publish(topic, json.dumps(payload.message))
 
 
-def open_admin_link(topic_name):
+def open_admin_link(topic_name, user):
     config.ADMIN_CHANNELS.append(topic_name)
+    if user in config.ADMIN_ASSIGNED_CHANNELS.keys():
+        print("Updating keys before: " + str(config.ADMIN_CHANNELS))
+        config.ADMIN_CHANNELS.remove(config.ADMIN_ASSIGNED_CHANNELS[user])
+        print("Updating keys after : " + str(config.ADMIN_CHANNELS))
+    config.ADMIN_ASSIGNED_CHANNELS.update({user: topic_name})
+    print(config.ADMIN_ASSIGNED_CHANNELS)
     client.subscribe(topic_name)
 
 

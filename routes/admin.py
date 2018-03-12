@@ -69,7 +69,7 @@ def get_home_data():
 @print_request
 def setup_link():
     topic_name = str(uuid.uuid4())
-    open_admin_link(topic_name)
+    open_admin_link(topic_name, request.json['token'])
     return jsonify(topic_name=topic_name), 200
 
 
