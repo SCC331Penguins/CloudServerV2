@@ -32,7 +32,19 @@ def request_live_data():
 @print_request
 def phone_location():
     router_id = request.json['router_id']
-    message = MessageCreator(MessageCreator.PHONE_LOCATION, request.json['zone'])
+    message = MessageCreator(MessageCreator.PHONE_LOCATION, request.json['sensor_id'])
+    send_message(router_id, message)
+    return jsonify(True), 200
+
+
+@api.route("/arm_system", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+@print_request
+def arm_system():
+    router_id = request.json['router_id']
+    arm = request.json['armed']
+    message = MessageCreator(MessageCreator.ARM_SYSTEM, arm)
     send_message(router_id, message)
     return jsonify(True), 200
 

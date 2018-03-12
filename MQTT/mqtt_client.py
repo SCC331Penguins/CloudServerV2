@@ -26,7 +26,8 @@ def on_connect(client, flags, userdata, rc):
 def send_message(topic, payload):
     logger.info("Sending Message: " + str(payload) + " to topic: " + str(topic))
     if config.DEBUG_MQTT is True:
-        print(payload)
+        print("<Topic: " + topic + ", " + str(payload))
+        print(payload.message)
     client.publish(topic, json.dumps(payload.message))
 
 

@@ -15,6 +15,7 @@ class MessageCreator():
     COMMAND = "COM"
     CONFIG_BUTTON = "CONFIB"
     PHONE_LOCATION = "PHOLOC"
+    ARM_SYSTEM = "ARM"
 
     def __init__(self, type, payload):
         self.type = type
