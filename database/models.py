@@ -1,4 +1,4 @@
-from database.database import db
+from .database import db
 
 """
 Remember to run this on database change:

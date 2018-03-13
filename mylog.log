@@ -4379,3 +4379,14 @@
 2018-03-13 17:37:38,794 - root - INFO - Starting Flask Server
 2018-03-13 17:37:38,794 - root - INFO - Connected to MQTT Broker
 2018-03-13 17:37:38,949 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 23:13:03,961 - root - INFO - Creating Flask init_app
+2018-03-13 23:14:22,168 - root - INFO - Creating Flask init_app
+2018-03-13 23:14:22,255 - root - INFO - Registering Blueprints
+2018-03-13 23:14:22,267 - root - INFO - Starting Flask Server
+2018-03-13 23:14:22,379 - root - INFO - Connected to MQTT Broker
+2018-03-13 23:14:22,393 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-13 23:22:52,646 - root - INFO - Creating Flask init_app
+2018-03-13 23:22:52,697 - root - INFO - Registering Blueprints
+2018-03-13 23:22:52,708 - root - INFO - Starting Flask Server
+2018-03-13 23:22:52,708 - root - INFO - Connected to MQTT Broker
+2018-03-13 23:22:52,715 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)

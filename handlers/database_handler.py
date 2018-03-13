@@ -1,6 +1,6 @@
 from database.database import db
 from passlib.apps import custom_app_context as pwd_context
-from util.auth import authenticator
+from util.auth.authenticator import *
 from sqlalchemy.exc import IntegrityError
 import time
 
@@ -119,8 +119,8 @@ class DatabaseHandler():
                 return [(False, "User does not exist")]
             user = self.get_user(username)
             if pwd_context.verify(password, user.password) is True:
-                return [(True, authenticator.generate_token(user.id))]
-            return [(False, "Incorrect password")]            
+                return [(True, generate_token(user.id))]
+            return [(False, "Incorrect password")]
 
         # Get the user by their username
         def get_user(self, username):
