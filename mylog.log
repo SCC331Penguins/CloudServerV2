@@ -3855,3 +3855,527 @@
 2018-03-13 16:17:05,913 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:05] "POST /router/get_router HTTP/1.1" 200 -
 2018-03-13 16:17:05,970 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:05] "POST /router/get_router HTTP/1.1" 200 -
 2018-03-13 16:17:10,001 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:10] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:24:30,172 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:24:30] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 16:24:30,395 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:24:30] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:24:30,427 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:24:30] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:24:30,547 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:24:30] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:24:31,649 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:24:31] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:24:32,917 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:24:32] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 16:24:32,970 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:24:32] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 16:26:52,361 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:26:52] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 16:26:52,656 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:26:52] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:26:52,702 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:26:52] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:26:52,755 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:26:52] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:26:54,081 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:26:54] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:26:55,075 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:26:55] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 16:26:55,155 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:26:55] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 16:31:08,891 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:08] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 16:31:09,136 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:09] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:31:09,165 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:09] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:31:09,211 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:09] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:31:10,235 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:10] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:31:11,264 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:11] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 16:31:11,305 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:11] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 16:31:47,853 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:47] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 16:31:47,892 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:31:47] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 16:32:36,794 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 16:32:36] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:44:48,759 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:44:48] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 16:44:49,488 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:44:49] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:44:49,705 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:44:49] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:44:51,492 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:44:51] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:45:19,520 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:45:19] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:46:32,523 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:46:32] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:46:32,620 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:46:32] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:46:32,679 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:46:32] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:46:32,911 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:46:32] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:46:40,327 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:46:40] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:49:54,266 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:49:54] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:49:54,339 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:49:54] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:49:54,392 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:49:54] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:49:54,516 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:49:54] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:49:57,389 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:49:57] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:53:04,170 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:04] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 16:53:04,439 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:04] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:53:04,470 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:04] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:53:04,527 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:04] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:53:08,357 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:08] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:53:09,385 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:09] "POST /api/set_sensor_rooms HTTP/1.1" 404 -
+2018-03-13 16:53:22,688 - root - INFO - Creating Flask init_app
+2018-03-13 16:53:22,737 - root - INFO - Registering Blueprints
+2018-03-13 16:53:22,756 - root - INFO - Starting Flask Server
+2018-03-13 16:53:22,757 - root - INFO - Connected to MQTT Broker
+2018-03-13 16:53:22,959 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 16:53:24,294 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:24] "POST /api/set_sensor_rooms HTTP/1.1" 500 -
+2018-03-13 16:53:33,965 - root - INFO - Creating Flask init_app
+2018-03-13 16:53:34,012 - root - INFO - Registering Blueprints
+2018-03-13 16:53:34,031 - root - INFO - Starting Flask Server
+2018-03-13 16:53:34,031 - root - INFO - Connected to MQTT Broker
+2018-03-13 16:53:34,226 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 16:53:34,697 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:53:34] "POST /api/set_sensor_rooms HTTP/1.1" 200 -
+2018-03-13 16:58:17,482 - root - INFO - Creating Flask init_app
+2018-03-13 16:58:17,524 - root - INFO - Registering Blueprints
+2018-03-13 16:58:17,540 - root - INFO - Starting Flask Server
+2018-03-13 16:58:17,540 - root - INFO - Connected to MQTT Broker
+2018-03-13 16:58:17,703 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:05:53,249 - root - INFO - Creating Flask init_app
+2018-03-13 17:05:53,361 - root - INFO - Registering Blueprints
+2018-03-13 17:05:53,382 - root - INFO - Starting Flask Server
+2018-03-13 17:05:53,382 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:05:53,581 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:05:56,440 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 17:05:56] "POST /api/set_sensor_rooms HTTP/1.1" 200 -
+2018-03-13 17:06:21,822 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 17:06:21] "POST /api/set_sensor_rooms HTTP/1.1" 200 -
+2018-03-13 17:06:28,987 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 17:06:28] "POST /api/set_sensor_rooms HTTP/1.1" 200 -
+2018-03-13 17:10:25,633 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 17:10:25,633 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 17:10:26,396 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:26] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:10:27,481 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:27] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:10:29,949 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:29] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 17:10:32,144 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:32] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:10:33,508 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:33] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:10:35,776 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:35] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:10:45,948 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:45] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 17:10:48,991 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:10:48] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-13 17:10:54,326 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:10:56,913 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:11:04,980 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:11:14,682 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:11:24,615 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:11:35,164 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:11:44,873 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:11:54,494 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:11:56,831 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:12:04,731 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:12:14,721 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:12:21,759 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:12:24,845 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:12:29,663 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:12:43,324 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:12:45,094 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:12:53,873 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:13:03,210 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:13:12,475 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:12] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:13:13,114 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:13:13,416 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:13] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:13:14,220 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:14] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 17:13:15,046 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:15] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:13:16,258 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:16] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:13:17,420 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:17] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:13:19,658 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:19] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 17:13:20,504 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:13:20] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-13 17:13:23,545 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:13:33,233 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:13:43,253 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:13:43,990 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:13:53,262 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:03,644 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:08,244 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:13,262 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:18,702 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:21,239 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:23,356 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:33,931 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:44,649 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:14:45,407 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:51,120 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:14:53,382 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:06,669 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:15:07,868 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:16,150 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:26,104 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:36,134 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:48,789 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:50,028 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:15:50] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:15:55,545 - root - INFO - Creating Flask init_app
+2018-03-13 17:15:55,609 - root - INFO - Registering Blueprints
+2018-03-13 17:15:55,628 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:15:55,628 - root - INFO - Starting Flask Server
+2018-03-13 17:15:55,804 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:15:57,957 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:58,062 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:15:59,666 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:16:08,161 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:16:09,425 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:16:18,326 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:16:28,016 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:16:37,987 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:16:48,027 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:16:55,492 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:17:06,158 - root - INFO - Creating Flask init_app
+2018-03-13 17:17:06,204 - root - INFO - Registering Blueprints
+2018-03-13 17:17:06,220 - root - INFO - Starting Flask Server
+2018-03-13 17:17:06,220 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:17:06,379 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:17:16,470 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:17:16,516 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:17:16,565 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:17:21,118 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:17:24,827 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:17:27,222 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:17:46,399 - root - INFO - Creating Flask init_app
+2018-03-13 17:17:46,446 - root - INFO - Registering Blueprints
+2018-03-13 17:17:46,462 - root - INFO - Starting Flask Server
+2018-03-13 17:17:46,462 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:17:46,614 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:17:51,208 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:18:00,960 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:03,055 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:18:14,291 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:18:19,041 - root - INFO - Creating Flask init_app
+2018-03-13 17:18:19,082 - root - INFO - Registering Blueprints
+2018-03-13 17:18:19,101 - root - INFO - Starting Flask Server
+2018-03-13 17:18:19,101 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:18:19,263 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:18:22,355 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:18:22,359 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:22,732 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:18:26,860 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:30,610 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:34,931 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:44,140 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:44,216 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:44,993 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:47,202 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:48,085 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:18:57,283 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:00,452 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:02,749 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:07,925 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:10,975 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:12,750 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:19:17,206 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:19:19,369 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:22,594 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:24,484 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:27,794 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:30,112 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:33,626 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:38,585 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:40,939 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:43,924 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:48,469 - root - INFO - Creating Flask init_app
+2018-03-13 17:19:48,513 - root - INFO - Registering Blueprints
+2018-03-13 17:19:48,530 - root - INFO - Starting Flask Server
+2018-03-13 17:19:48,530 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:19:48,729 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:19:48,994 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:52,258 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:52,595 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:19:53,963 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:19:57,491 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:00,451 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:03,840 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:08,200 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:12,209 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:17,705 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:19,039 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:22,867 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:28,085 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:28,722 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:33,107 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:20:35,209 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:36,787 - root - INFO - Creating Flask init_app
+2018-03-13 17:20:36,831 - root - INFO - Registering Blueprints
+2018-03-13 17:20:36,847 - root - INFO - Starting Flask Server
+2018-03-13 17:20:36,847 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:20:36,999 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:20:39,779 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:20:40,224 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:45,638 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:20:49,015 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:20:56,674 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:56,723 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:20:58,061 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:02,777 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:03,969 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:11,645 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:12,586 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:15,227 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:17,045 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:17,922 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:22,360 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:23,699 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:25,662 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:29,524 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:21:33,544 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:21:39,535 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:21:41,962 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:45,407 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:49,338 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:21:59,413 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:22:09,155 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:22:22,891 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:22:24,902 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:22:33,466 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:22:46,437 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:22:47,668 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:22:56,625 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:23:05,840 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 17:23:05,841 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 17:23:06,454 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:23:06,593 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:06] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:23:07,921 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:07] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:23:10,240 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:10] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 17:23:13,656 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:13] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:23:16,040 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:16] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:23:16,763 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:23:18,024 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:18] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:23:21,033 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:21] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 17:23:22,427 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:23:22] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-13 17:23:26,530 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:23:36,774 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:23:45,786 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:23:46,622 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:23:56,799 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:06,859 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:11,644 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:15,462 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:19,376 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:24,771 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:28,250 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:29,540 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:34,007 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:36,957 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:47,351 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:24:49,409 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:24:51,815 - root - INFO - Creating Flask init_app
+2018-03-13 17:24:51,862 - root - INFO - Registering Blueprints
+2018-03-13 17:24:51,878 - root - INFO - Starting Flask Server
+2018-03-13 17:24:51,878 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:24:52,035 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:24:56,837 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:00,280 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:25:06,729 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:19,154 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:20,990 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:25,248 - root - INFO - Creating Flask init_app
+2018-03-13 17:25:25,297 - root - INFO - Registering Blueprints
+2018-03-13 17:25:25,319 - root - INFO - Starting Flask Server
+2018-03-13 17:25:25,319 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:25:25,474 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:25:26,561 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:30,692 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:25:36,913 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:41,286 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:47,472 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:51,348 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:25:52,012 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 17:25:52,012 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 17:25:52,802 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:25:52] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:25:53,967 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:25:55,862 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:25:55] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:25:57,034 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:25:57] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 17:25:58,813 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:25:59,313 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:25:59] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:26:00,995 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:26:00] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:26:03,254 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:05,721 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:26:05] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 17:26:06,635 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:26:06] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-13 17:26:11,298 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:12,618 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:21,707 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:21,708 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:26,366 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:32,430 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:41,483 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:26:55,685 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:27:17,921 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:28:45,873 - root - INFO - Creating Flask init_app
+2018-03-13 17:28:45,923 - root - INFO - Registering Blueprints
+2018-03-13 17:28:45,939 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:28:45,939 - root - INFO - Starting Flask Server
+2018-03-13 17:28:46,101 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:28:48,766 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:28:49,339 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:28:49] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:28:49,341 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 17:28:49,342 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 17:28:50,077 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:28:50] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:28:51,769 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:28:52,912 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:28:52] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:28:52,942 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:28:56,663 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:28:56] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:28:57,891 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:28:58,348 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:28:58] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 17:29:01,614 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:01] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:05,266 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:05] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:05,915 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:05] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:29:07,424 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:07] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:08,598 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:29:10,632 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:10] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:12,702 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:12] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:14,745 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:14] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:16,428 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:16] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:17,957 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:29:19,911 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:19] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:29:20,687 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:20] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:22,091 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:22] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 17:29:24,679 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:24] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:27,718 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:27] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:29:27,840 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:29:31,061 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:31] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 17:29:32,754 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:29:32] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-13 17:29:38,350 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:29:47,790 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:29:48,530 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:29:57,795 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:30:05,044 - root - INFO - Sending Message: <MQTT Type: CONFIB, Payload: {'1': {'MAC': 'AC:CF:23:A1:FB:38', 'command': 'allLightsOn'}, '2': {'MAC': 'AC:CF:23:A1:FB:38', 'command': 'allLightsOn'}, '3': {'MAC': 'AC:CF:23:A1:FB:38', 'command': 'allLightsOn'}, '4': {'MAC': 'AC:CF:23:A1:FB:38', 'command': 'allLightsOn'}}> to topic: SCC33102_R01
+2018-03-13 17:30:05,045 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:30:05] "POST /api/set_button HTTP/1.1" 200 -
+2018-03-13 17:30:07,918 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:30:17,771 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:30:30,176 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:30:30,178 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:30:32,166 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:30:34,480 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:30:44,484 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:30:51,051 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:30:51] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:30:54,359 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:12,096 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:15,558 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:15,587 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:17,207 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:21,873 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:26,837 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:28,374 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:31:29,849 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:33,903 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:38,549 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:42,831 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:50,347 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:52,788 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:31:56,375 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:32:01,802 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:32:08,459 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:32:10,187 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:32:11,193 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:32:12,764 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:32:22,326 - root - INFO - Creating Flask init_app
+2018-03-13 17:32:22,379 - root - INFO - Registering Blueprints
+2018-03-13 17:32:22,394 - root - INFO - Starting Flask Server
+2018-03-13 17:32:22,394 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:32:22,542 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:32:28,354 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:32:51,113 - root - INFO - Creating Flask init_app
+2018-03-13 17:32:51,160 - root - INFO - Registering Blueprints
+2018-03-13 17:32:51,176 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:32:51,176 - root - INFO - Starting Flask Server
+2018-03-13 17:32:51,324 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:32:54,739 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:32:54,741 - root - INFO - Sending Message: <MQTT Type: ROOMRSP, Payload: None> to topic: SCC33102_R01
+2018-03-13 17:33:15,540 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,301 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,372 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,411 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,442 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,471 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,501 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,536 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,577 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,609 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,637 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:16,671 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:33:19,528 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:21,559 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:28,740 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:29,136 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:29,607 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:31,719 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:32,397 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:33,386 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:33:34,917 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:36,868 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:44,095 - root - INFO - Creating Flask init_app
+2018-03-13 17:33:44,149 - root - INFO - Registering Blueprints
+2018-03-13 17:33:44,166 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:33:44,167 - root - INFO - Starting Flask Server
+2018-03-13 17:33:44,321 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:33:46,550 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:33:49,089 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:33:49,092 - root - INFO - Sending Message: <MQTT Type: ROOMRSP, Payload: None> to topic: SCC33102_R01
+2018-03-13 17:34:35,693 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,377 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,423 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,456 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,495 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,521 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,549 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,582 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,615 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:36,659 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:38,536 - root - INFO - Creating Flask init_app
+2018-03-13 17:34:38,588 - root - INFO - Registering Blueprints
+2018-03-13 17:34:38,605 - root - INFO - Starting Flask Server
+2018-03-13 17:34:38,605 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:34:38,755 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:34:40,367 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:41,817 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:34:41,819 - root - INFO - Sending Message: <MQTT Type: ROOMRSP, Payload: None> to topic: SCC33102_R01
+2018-03-13 17:34:45,960 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:34:54,083 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:06,833 - root - INFO - Creating Flask init_app
+2018-03-13 17:35:06,875 - root - INFO - Registering Blueprints
+2018-03-13 17:35:06,890 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:35:06,890 - root - INFO - Starting Flask Server
+2018-03-13 17:35:07,040 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:35:10,614 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:35:10,616 - root - INFO - Sending Message: <MQTT Type: ROOMRSP, Payload: None> to topic: SCC33102_R01
+2018-03-13 17:35:33,909 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:34,615 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:34,674 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:34,710 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:34,745 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:37,194 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:41,023 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:44,886 - root - INFO - Creating Flask init_app
+2018-03-13 17:35:44,928 - root - INFO - Registering Blueprints
+2018-03-13 17:35:44,944 - root - INFO - Starting Flask Server
+2018-03-13 17:35:44,944 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:35:45,154 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:35:46,549 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:47,559 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:35:47,562 - root - INFO - Sending Message: <MQTT Type: ROOMRSP, Payload: None> to topic: SCC33102_R01
+2018-03-13 17:35:52,184 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 17:35:52,184 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 17:35:52,857 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:35:52] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 17:35:53,003 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:54,009 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:35:54] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:35:55,323 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:35:55] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 17:35:56,723 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:35:57,052 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:35:57] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:35:58,180 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:35:58,559 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:35:58] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:36:01,289 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:01,897 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:02,296 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:36:02] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 17:36:02,945 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:04,247 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:05,009 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:36:05] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 17:36:05,986 - werkzeug - INFO - 192.168.0.110 - - [13/Mar/2018 17:36:05] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-13 17:36:09,099 - root - INFO - Creating Flask init_app
+2018-03-13 17:36:09,145 - root - INFO - Registering Blueprints
+2018-03-13 17:36:09,160 - root - INFO - Starting Flask Server
+2018-03-13 17:36:09,160 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:36:09,312 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:36:12,644 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:36:12,647 - root - INFO - Sending Message: <MQTT Type: ROOMRSP, Payload: None> to topic: SCC33102_R01
+2018-03-13 17:36:14,329 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:27,778 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:36:28,356 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:36:28,863 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:34,257 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:44,189 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:36:54,518 - root - INFO - Creating Flask init_app
+2018-03-13 17:36:54,566 - root - INFO - Registering Blueprints
+2018-03-13 17:36:54,582 - root - INFO - Starting Flask Server
+2018-03-13 17:36:54,582 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:36:54,736 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 17:36:58,533 - root - DEBUG - Message Recieved of type ROOMREQ
+2018-03-13 17:36:58,536 - root - INFO - Sending Message: <MQTT Type: ROOMRSP, Payload: [{'id': '23003f001947343438323536', 'room': 'Zone 1'}, {'id': '290026001447343338333633', 'room': 'Zone 2'}, {'id': '430032000f47353136383631', 'room': 'Zone 3'}]> to topic: SCC33102_R01
+2018-03-13 17:37:04,548 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:37:14,516 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:37:25,125 - root - DEBUG - Message Recieved of type DATA
+2018-03-13 17:37:27,172 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:37:34,791 - root - DEBUG - Message Recieved of type PING
+2018-03-13 17:37:38,722 - root - INFO - Creating Flask init_app
+2018-03-13 17:37:38,774 - root - INFO - Registering Blueprints
+2018-03-13 17:37:38,794 - root - INFO - Starting Flask Server
+2018-03-13 17:37:38,794 - root - INFO - Connected to MQTT Broker
+2018-03-13 17:37:38,949 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)

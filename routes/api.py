@@ -25,6 +25,17 @@ def request_live_data():
     return jsonify(topic_name=topic_name), 200
 
 
+@api.route("/set_sensor_rooms", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+@print_request
+def set_rooms():
+    router_id = request.json['router_id']
+    sensors = request.json['sensors']
+    DatabaseHandler().save_rooms(router_id, sensors)
+    return jsonify(result=True), 200
+
+
 # Send phone location
 @api.route("/phone_location", methods=['POST'])
 @authenticator.requires_token

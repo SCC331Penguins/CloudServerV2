@@ -35,6 +35,19 @@ class DatabaseHandler():
             q = "INSERT INTO router_sensors VALUES (\""+str(router_id)+"\", \""+str(sensor_id)+"\")"
         self.execute_query(q)
 
+    def get_rooms(self, router_id):
+        result = self.fetch_result(self.execute_query("SELECT sensor_id FROM router_sensors WHERE router_id = \""+str(router_id)+"\""))
+        if len(result) == 0:
+            return []
+        list_of_rooms = []
+        for res in result[:]:
+            room_res = self.fetch_result(self.execute_query("SELECT room FROM sensor_rooms WHERE sensor_id = \""+str(res[0])+"\""))
+            if len(room_res) == 0:
+                return []
+            sensor_room = {"id": res[0], "room": room_res[0][0]}
+            list_of_rooms.append(sensor_room)
+        return list_of_rooms
+
     def record_reading(self, timestamp, router_id, data):
         sensor_id = data['id']
         temperature = data['temperature']

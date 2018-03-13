@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from database.database import db
@@ -24,6 +25,7 @@ def create_app():
     logger.info("Creating Flask init_app")
     app = Flask(__name__)
     app.config.from_pyfile('config.py')
+    CORS(app)
     db.init_app(app)
     flask_admin = Admin(app)
     with app.test_request_context():

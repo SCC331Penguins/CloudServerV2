@@ -10,10 +10,15 @@ logger = logging.getLogger()
 
 
 def on_message(client, userdata, message):
+    topic = message.topic
     if (message.topic in config.ADMIN_CHANNELS) is True:
         return
     message = json.loads(message.payload)
     mess = MessageHandler(message)
+    res = mess.perform()
+    if res is not None:
+        print("OI OI " + str(res.payload))
+        send_message(topic, res)
     if config.DEBUG is True and mess.id is not False:
         print(mess)
 

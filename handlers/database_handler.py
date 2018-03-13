@@ -19,7 +19,7 @@ class DatabaseHandler():
         def __init__(self):
             from database.models import (Users, Router, UserRouters,
                                          RouterSensors, Sensor, Actuator,
-                                         Script, PhoneToken)
+                                         Script, PhoneToken, SensorRooms)
             self.Users = Users
             self.Router = Router
             self.UserRouters = UserRouters
@@ -28,6 +28,7 @@ class DatabaseHandler():
             self.Sensor = Sensor
             self.Script = Script
             self.PhoneToken = PhoneToken
+            self.Rooms = SensorRooms
             pass
 
         # Get user routers
@@ -106,6 +107,12 @@ class DatabaseHandler():
             id = len(db.session.query(self.Users).all())
             return {"id": id, "username": username}
 
+        def save_rooms(self, router_id, sensors):
+            for sensor in sensors[:]:
+                db.session.query(self.Rooms).filter(self.Rooms.sensor_id == sensor['id']).delete()
+                db.session.commit()
+                self.add(self.Rooms(sensor['id'], sensor['room']))
+
         # Login User
         def login_user(self, username, password):
             if self.user_exists(username=username) is False:
@@ -113,7 +120,7 @@ class DatabaseHandler():
             user = self.get_user(username)
             if pwd_context.verify(password, user.password) is True:
                 return [(True, authenticator.generate_token(user.id))]
-            return [(False, "Incorrect password")]
+            return [(False, "Incorrect password")]            
 
         # Get the user by their username
         def get_user(self, username):

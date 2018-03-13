@@ -117,4 +117,16 @@ class PhoneToken(db.Model):
         return '<PhoneToken: ' + str(self.token) + ', Router: ' + str(self.router_id) + '>'
 
 
+class SensorRooms(db.Model):
+    sensor_id = db.Column(db.String(100), primary_key=True)
+    room = db.Column(db.String(50), primary_key=True)
+
+    def __init__(self, sensor_id, room):
+        self.sensor_id = sensor_id
+        self.room = room
+
+    def __repr__(self):
+        return '<Room: %r, Sensor ID: %r>' % (self.room, self.sensor_id)
+
+
 db.create_all()
