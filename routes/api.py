@@ -3,7 +3,7 @@ from handlers.database_handler import DatabaseHandler
 from handlers.message_creator import MessageCreator
 from util.auth import authenticator
 from util.debug import print_request, print_request_short
-from MQTT.mqtt_client import send_message
+from MQTT.mqtt_client import send_message, send_message_admin
 import uuid
 
 api = Blueprint('api', __name__, url_prefix='/api')
@@ -21,7 +21,19 @@ def request_live_data():
     topic_name = str(uuid.uuid4())
     message = MessageCreator(MessageCreator.NEW_CHANNEL, topic_name)
     send_message(router_id, message)
+    send_message_admin("API", "New Live data link by user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(router_id))
     return jsonify(topic_name=topic_name), 200
+
+
+@api.route("/set_sensor_rooms", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+@print_request
+def set_rooms():
+    router_id = request.json['router_id']
+    sensors = request.json['sensors']
+    DatabaseHandler().save_rooms(router_id, sensors)
+    return jsonify(result=True), 200
 
 
 # Send phone location
@@ -31,7 +43,19 @@ def request_live_data():
 @print_request
 def phone_location():
     router_id = request.json['router_id']
-    message = MessageCreator(MessageCreator.PHONE_LOCATION, request.json['zone'])
+    message = MessageCreator(MessageCreator.PHONE_LOCATION, request.json['sensor_id'])
+    send_message(router_id, message)
+    return jsonify(True), 200
+
+
+@api.route("/arm_system", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+@print_request
+def arm_system():
+    router_id = request.json['router_id']
+    arm = request.json['armed']
+    message = MessageCreator(MessageCreator.ARM_SYSTEM, arm)
     send_message(router_id, message)
     return jsonify(True), 200
 
@@ -45,6 +69,7 @@ def control_actuator():
     router_id = request.json['router_id']
     message = MessageCreator(MessageCreator.COMMAND, {'MAC': request.json['MAC'], "command": request.json['command']})
     send_message(router_id, message)
+    send_message_admin("API", "Actuator control by user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(router_id))
     return jsonify(True), 200
 
 

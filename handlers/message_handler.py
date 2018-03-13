@@ -45,6 +45,16 @@ def ACTIVE_SENSORS(message):
         DatabaseHandler().init_sensor(sensor, message.id)
 
 
+def ROOM_REQUEST(message):
+    print("ROOM REQ")
+    print(message.id)
+    sensors = DatabaseHandler().get_rooms(message.id)
+    print(sensors)
+    message_to_send = MessageCreator(MessageCreator.ROOM_RESPONSE, sensors)
+    print("MESSAGE TO SEND" + str(message_to_send))
+    return message_to_send
+
+
 # What to do with what type
 typeDict = {
     MessageCreator.PING: PING,
@@ -52,6 +62,7 @@ typeDict = {
     MessageCreator.ACTIVE_SENSORS: ACTIVE_SENSORS,
     MessageCreator.REG_ACTUATOR: REG_ACTUATOR,
     MessageCreator.SAVE_DATA: SAVE_DATA,
+    MessageCreator.ROOM_REQUEST: ROOM_REQUEST,
 }
 
 
@@ -61,10 +72,13 @@ class MessageHandler():
         self.type = message['type']
         self.payload = message['payload']
         self.id = verify_token(message['token'])
+
+    def perform(self):
         s = typeDict.get(self.type)
         if s is not None:
             logger.debug("Message Recieved of type %s", self.type)
-            s(self)
+            return s(self)
+        return None
 
     def __repr__(self):
         return '<ID: ' + str(self.id) + ', Type: ' + str(self.type) + ', Payload: ' + str(self.payload) + '>'

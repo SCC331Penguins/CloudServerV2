@@ -41,3 +41,15 @@ def requires_ownership(f):
             return jsonify(False), 200
         return f(*args, **kwargs)
     return check
+
+
+def requires_admin(f):
+    @wraps(f)
+    def admin(*args, **kwargs):
+        id = verify_token(request.json['token'])
+        if id is False:
+            return jsonify(False), 200
+        if DatabaseHandler().check_admin(id) is False:
+            return jsonify(False), 200
+        return f(*args, **kwargs)
+    return admin

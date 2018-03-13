@@ -1,6 +1,7 @@
 from database.database import db
 from passlib.apps import custom_app_context as pwd_context
 from util.auth import authenticator
+from sqlalchemy.exc import IntegrityError
 import time
 
 """
@@ -18,7 +19,7 @@ class DatabaseHandler():
         def __init__(self):
             from database.models import (Users, Router, UserRouters,
                                          RouterSensors, Sensor, Actuator,
-                                         Script, PhoneToken)
+                                         Script, PhoneToken, SensorRooms)
             self.Users = Users
             self.Router = Router
             self.UserRouters = UserRouters
@@ -27,6 +28,7 @@ class DatabaseHandler():
             self.Sensor = Sensor
             self.Script = Script
             self.PhoneToken = PhoneToken
+            self.Rooms = SensorRooms
             pass
 
         # Get user routers
@@ -63,6 +65,14 @@ class DatabaseHandler():
             db.session.commit()
             self.add(self.PhoneToken(token, router_id))
 
+        def check_admin(self, user_id):
+            user = db.session.query(self.Users).get(user_id)
+            if user is None:
+                return False
+            if user.is_admin == 0:
+                return False
+            return True
+
         # Add a script to the database
         def add_script(self, router_id, script):
             if self.router_exists(router_id) is False:
@@ -92,8 +102,16 @@ class DatabaseHandler():
             if self.user_exists(username=username):
                 return False
             password = pwd_context.encrypt(password)
+            user = self.Users(username, password)
             self.add(self.Users(username, password))
-            return True
+            id = len(db.session.query(self.Users).all())
+            return {"id": id, "username": username}
+
+        def save_rooms(self, router_id, sensors):
+            for sensor in sensors[:]:
+                db.session.query(self.Rooms).filter(self.Rooms.sensor_id == sensor['id']).delete()
+                db.session.commit()
+                self.add(self.Rooms(sensor['id'], sensor['room']))
 
         # Login User
         def login_user(self, username, password):
@@ -102,11 +120,17 @@ class DatabaseHandler():
             user = self.get_user(username)
             if pwd_context.verify(password, user.password) is True:
                 return [(True, authenticator.generate_token(user.id))]
-            return [(False, "Incorrect password")]
+            return [(False, "Incorrect password")]            
 
         # Get the user by their username
         def get_user(self, username):
             return db.session.query(self.Users).filter(self.Users.username == username).first()
+
+        def get_user_from_id(self, id):
+            user = db.session.query(self.Users).filter(self.Users.id == id).first()
+            if user is None:
+                return id
+            return user.username
 
         def get_router(self, router_id):
             return db.session.query(self.Router).filter(self.Router.router_id == router_id).first()
@@ -129,6 +153,58 @@ class DatabaseHandler():
                 return False
             return True
 
+        def get_sensors(self):
+            sensors = db.session.query(self.Sensor).all()
+            sensor_list = []
+            for x in sensors[:]:
+                res = self.get_sensors_router(x.sensor_id)
+                dic = {'sensor_id': x.sensor_id, 'config': x.config, 'router': res}
+                sensor_list.append(dic)
+            return sensor_list
+
+        def add_router(self, router_id):
+            return self.add(self.Router(router_id))
+
+        def add(self, model):
+            db.session.add(model)
+            try:
+                db.session.commit()
+            except IntegrityError as err:
+                return False
+            return True
+
+        def set_user_admin(self, username, admin):
+            user = db.session.query(self.Users).filter(self.Users.username == username).first()
+            user.is_admin = admin
+            db.session.commit()
+
+        def get_users_admin(self):
+            users = db.session.query(self.Users).all()
+            if len(users) == 0:
+                print("None")
+                return []
+            users_list = []
+            for user in users[:]:
+                print(user.username)
+                routers = len(DatabaseHandler().get_user_routers(user.id))
+                user_dict = {"id": user.id, "username": user.username, "is_admin": user.is_admin, "routers": routers}
+                users_list.append(user_dict)
+            return users_list
+
+        def remove_router(self, router_id):
+            db.session.query(self.Router).filter(self.Router.router_id == router_id).delete()
+            db.session.commit()
+
+        def remove_sensor(self, sensor_id):
+            db.session.query(self.Sensor).filter(self.Sensor.sensor_id == sensor_id).delete()
+            db.session.commit()
+
+        def get_sensors_router(self, sensor_id):
+            router = db.session.query(self.RouterSensors).filter(self.RouterSensors.sensor_id == sensor_id).first()
+            if router is None:
+                return None
+            return router.router_id
+
         # Claim Router
         def claim_router(self, router_id, user_id):
             if self.router_exists(router_id) is False:
@@ -143,6 +219,8 @@ class DatabaseHandler():
         def get_router_status(self, router_id):
             r = db.session.query(self.Router).filter(self.Router.router_id == router_id).first()
             time_now = int(time.time())
+            if r is None:
+                return False
             if (time_now - r.last_heard) < 120:
                 return True
             return False
@@ -155,6 +233,7 @@ class DatabaseHandler():
                 routers.append(x.router_id)
             return routers
 
+        # Get actuators
         def get_actuators(self, router_id):
             r = db.session.query(self.Actuators).filter(self.Actuators.router_id == router_id).all()
             actuators = []
@@ -176,12 +255,46 @@ class DatabaseHandler():
                 return False
             return True
 
+        def get_routers(self):
+            routers = db.session.query(self.Router).all()
+            if len(routers) == 0:
+                return []
+            router_list = []
+            for x in routers[:]:
+                res = self.get_router_sensors(x.router_id)
+                res1 = self.get_router_owner(x.router_id)
+                online = self.get_router_status(x.router_id)
+                dic = {'router_id': x.router_id, 'sensors': len(res), 'owner': res1, 'online': online, 'last_heard': x.last_heard}
+                router_list.append(dic)
+            return router_list
+
+        def add_sensor(self, sensor_id):
+            return self.add(self.Sensor(sensor_id, 0))
+
+        def remove_user(self, username):
+            db.session.query(self.Users).filter(self.Users.username == username).delete()
+            db.session.commit()
+
+        def get_users(self):
+            return db.session.query(self.Users).all()
+
+        def is_sensor_claimed(self, sensor_id):
+            result = db.session.query(self.RouterSensors).filter(self.RouterSensors.sensor_id == sensor_id).first()
+            if result is None:
+                return False
+            return True
+
+        def get_router_owner(self, router_id):
+            router = db.session.query(self.UserRouters).filter(self.UserRouters.router_id == router_id).first()
+            if router is None:
+                return None
+            user = db.session.query(self.Users).filter(self.Users.id == router.user_id).first()
+            if user is None:
+                return "Removed User"
+            return user.username
+
         # Check multiple query result
         def check_result(self, result):
             if len(result) == 0:
                 return None
             return result
-
-        def add(self, model):
-            db.session.add(model)
-            db.session.commit()
