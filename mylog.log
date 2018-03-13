@@ -3612,3 +3612,246 @@
 2018-03-12 16:13:59,765 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:13:59] "POST /api/phone_location HTTP/1.1" 200 -
 2018-03-12 16:14:00,994 - root - INFO - Sending Message: <MQTT Type: PHOLOC, Payload: wl123s1l23> to topic: SCC33102_R01
 2018-03-12 16:14:00,995 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:14:00] "POST /api/phone_location HTTP/1.1" 200 -
+2018-03-12 16:23:18,557 - root - INFO - Creating Flask init_app
+2018-03-12 16:23:18,607 - root - INFO - Registering Blueprints
+2018-03-12 16:23:18,623 - root - INFO - Connected to MQTT Broker
+2018-03-12 16:23:18,623 - root - INFO - Starting Flask Server
+2018-03-12 16:23:18,800 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-12 16:23:47,306 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-12 16:23:47,306 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-12 16:23:48,013 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:23:48] "POST /user/login HTTP/1.1" 200 -
+2018-03-12 16:23:48,459 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:23:48] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:23:49,811 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:23:49] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-12 16:23:50,994 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:23:50] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-12 16:24:00,646 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:00] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:24:02,100 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:02] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-12 16:24:03,728 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:03] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:24:09,941 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:09] "POST /user/login HTTP/1.1" 200 -
+2018-03-12 16:24:10,161 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:10] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:24:10,750 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:10] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-12 16:24:17,134 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:17] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-12 16:24:18,378 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:18] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-12 16:24:28,517 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:28] "POST /admin/remove_router HTTP/1.1" 200 -
+2018-03-12 16:24:31,463 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:31] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:24:32,326 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:32] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-12 16:24:34,334 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:34] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-12 16:24:38,669 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:38] "POST /admin/set_user_admin HTTP/1.1" 200 -
+2018-03-12 16:24:41,078 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:41] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:24:43,739 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:43] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:24:44,364 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:44] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-12 16:24:45,399 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:45] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:24:46,853 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:46] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:24:53,314 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:53] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-12 16:24:55,454 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:24:55] "POST /admin/set_user_admin HTTP/1.1" 200 -
+2018-03-12 16:24:57,454 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:57] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-12 16:24:58,269 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:24:58] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:25:02,950 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:25:02] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-12 16:25:32,553 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:32] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:25:45,997 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:45] "POST /user/login HTTP/1.1" 200 -
+2018-03-12 16:25:46,051 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:46] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-12 16:25:46,065 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:46] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:25:46,083 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:46] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:25:53,718 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:53] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:25:57,574 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:57] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:25:57,589 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:25:57] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-12 16:26:10,950 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:26:10] "POST /user/login HTTP/1.1" 200 -
+2018-03-12 16:26:11,037 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:26:11] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:26:11,045 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:26:11] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-12 16:26:11,100 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:26:11] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:26:28,754 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:26:28] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:26:31,488 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:26:31] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:26:31,501 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:26:31] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-12 16:31:24,955 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:31:24] "POST /user/login HTTP/1.1" 200 -
+2018-03-12 16:31:25,046 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:31:25] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:31:25,054 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:31:25] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-12 16:31:25,109 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:31:25] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:31:49,019 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:31:49] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-12 16:31:57,706 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:31:57] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:31:57,721 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:31:57] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-12 16:32:04,655 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:32:04] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:32:04,670 - werkzeug - INFO - 192.168.0.113 - - [12/Mar/2018 16:32:04] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-12 16:33:49,976 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:33:49] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-12 16:33:52,040 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:33:52] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:33:52,762 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:33:52] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-12 16:33:53,542 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:33:53] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-12 16:33:54,163 - werkzeug - INFO - 192.168.0.134 - - [12/Mar/2018 16:33:54] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:15:18,388 - root - INFO - Creating Flask init_app
+2018-03-13 14:15:18,601 - root - INFO - Registering Blueprints
+2018-03-13 14:15:18,643 - root - INFO - Connected to MQTT Broker
+2018-03-13 14:15:18,643 - root - INFO - Starting Flask Server
+2018-03-13 14:15:19,072 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 14:34:29,338 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 14:34:29,338 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 14:34:30,031 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:34:30] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 14:34:30,265 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:34:30] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:34:30,816 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:34:30] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:34:32,098 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:34:32] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:35:34,860 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:35:34] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 14:35:35,063 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:35:35] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:35:35,514 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:35:35] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:35:37,580 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:35:37] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:36:44,825 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:36:44] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 14:36:45,023 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:36:45] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:36:45,574 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:36:45] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:36:46,571 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:36:46] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:37:42,664 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:37:42] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:37:42,750 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:37:42] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:37:43,136 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:37:43] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:37:47,424 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:37:47] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:37:48,101 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:37:48] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:37:50,917 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:37:50] "POST /admin/set_user_admin HTTP/1.1" 200 -
+2018-03-13 14:38:01,886 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:01] "POST /admin/set_user_admin HTTP/1.1" 200 -
+2018-03-13 14:38:04,670 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:04] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:38:06,673 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:06] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:38:08,305 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:08] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:38:09,726 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:09] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:38:10,474 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:10] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:38:17,225 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:17] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:38:40,844 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:40] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:38:42,140 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:42] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:38:51,867 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:51] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:38:55,310 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:55] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:38:56,200 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:56] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:38:58,875 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:38:58] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:39:05,702 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:39:05] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:39:08,965 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:39:08] "POST /admin/set_user_admin HTTP/1.1" 200 -
+2018-03-13 14:39:13,258 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:39:13] "POST /admin/set_user_admin HTTP/1.1" 200 -
+2018-03-13 14:39:27,347 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:39:27] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:39:29,009 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:39:29] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:39:31,501 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:39:31] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:47:45,569 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:47:45] "POST /user/register HTTP/1.1" 200 -
+2018-03-13 14:47:54,929 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:47:54] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 14:47:55,127 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:47:55] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:47:55,636 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:47:55] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:47:56,380 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:47:56] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:47:59,047 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:47:59] "POST /admin/remove_user HTTP/1.1" 200 -
+2018-03-13 14:53:23,878 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:53:23] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 14:53:24,075 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:53:24] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:53:24,626 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:53:24] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:53:27,146 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:53:27] "POST /admin/get_users HTTP/1.1" 200 -
+2018-03-13 14:53:28,568 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:53:28] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:53:29,149 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:53:29] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:53:32,247 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:53:32] "POST /admin/remove_router HTTP/1.1" 200 -
+2018-03-13 14:54:48,158 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:54:48] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 14:54:48,347 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:54:48] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:54:48,841 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:54:48] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:54:49,877 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:54:49] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:54:51,404 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:54:51] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:54:59,343 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:54:59] "POST /admin/add_router HTTP/1.1" 200 -
+2018-03-13 14:55:36,279 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:36] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:55:36,437 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:36] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 14:55:36,835 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:36] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 14:55:37,882 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:37] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 14:55:39,108 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:39] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 14:55:42,617 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:42] "POST /admin/remove_router HTTP/1.1" 200 -
+2018-03-13 14:55:46,812 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:46] "POST /admin/add_router HTTP/1.1" 200 -
+2018-03-13 14:55:50,116 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 14:55:50] "POST /admin/remove_router HTTP/1.1" 200 -
+2018-03-13 15:00:22,273 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 15:00:22] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:00:22,467 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 15:00:22] "POST /admin/get_home_data HTTP/1.1" 200 -
+2018-03-13 15:00:23,040 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 15:00:23] "POST /admin/create_data_link HTTP/1.1" 200 -
+2018-03-13 15:00:23,796 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 15:00:23] "POST /admin/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:00:27,570 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 15:00:27] "POST /admin/add_sensor HTTP/1.1" 200 -
+2018-03-13 15:00:30,436 - werkzeug - INFO - 192.168.0.113 - - [13/Mar/2018 15:00:30] "POST /admin/remove_sensor HTTP/1.1" 200 -
+2018-03-13 15:11:36,957 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:11:36] "GET / HTTP/1.1" 404 -
+2018-03-13 15:11:37,078 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:11:37] "GET /favicon.ico HTTP/1.1" 404 -
+2018-03-13 15:11:46,998 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:11:46] "GET /api/admin/getRouters HTTP/1.1" 404 -
+2018-03-13 15:14:55,808 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:14:55] "GET /admin/getRouters HTTP/1.1" 404 -
+2018-03-13 15:18:39,187 - root - INFO - Creating Flask init_app
+2018-03-13 15:18:39,232 - root - INFO - Registering Blueprints
+2018-03-13 15:18:39,250 - root - INFO - Starting Flask Server
+2018-03-13 15:18:39,250 - root - INFO - Connected to MQTT Broker
+2018-03-13 15:18:39,417 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 15:18:43,404 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 15:18:43,404 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 15:18:44,179 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:18:44] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:19:01,482 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:19:01] "GET /user/login?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.On9Q2QyZg8M3Scedkm0OTBt8k1Re86fd-K3GaHvVdDY HTTP/1.1" 405 -
+2018-03-13 15:19:09,262 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:19:09] "GET /admin/getRouters?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.On9Q2QyZg8M3Scedkm0OTBt8k1Re86fd-K3GaHvVdDY HTTP/1.1" 404 -
+2018-03-13 15:19:55,778 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:19:55] "GET /admin/get_routers?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.On9Q2QyZg8M3Scedkm0OTBt8k1Re86fd-K3GaHvVdDY HTTP/1.1" 405 -
+2018-03-13 15:20:30,329 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:30] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:20:31,048 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:31] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:20:31,443 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:31] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:20:31,855 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:31] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:20:41,704 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:41] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:20:56,489 - werkzeug - INFO - 192.168.0.133 - - [13/Mar/2018 15:20:56] "POST /admin/get_routers HTTP/1.1" 200 -
+2018-03-13 15:20:59,570 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:59] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:20:59,697 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:59] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:20:59,960 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:20:59] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:21:00,335 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:21:00] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:21:03,387 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:21:03] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:21:37,098 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:21:37] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:21:37,501 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:21:37] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:21:37,591 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:21:37] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:21:37,660 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:21:37] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:21:43,112 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:21:43] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:21:44,283 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:21:44] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 15:21:44,325 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:21:44] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 15:27:11,504 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:27:11] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:27:11,800 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:27:11] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:27:11,828 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:27:11] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:27:11,863 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:27:11] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:27:16,143 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:27:16] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:29:38,139 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:29:38] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:29:38,860 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:29:38] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:29:38,898 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:29:38] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:29:39,570 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:29:39] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:29:40,541 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:29:40] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:29:42,600 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:29:42] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 15:29:43,516 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:29:43] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 15:30:29,938 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:30:29] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:30:33,148 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:30:33] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:30:33,901 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:30:33] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:30:34,082 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:30:34] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:30:36,361 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:30:36] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:32:49,070 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:32:49] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:32:49,431 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:32:49] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:32:49,462 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:32:49] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:32:49,581 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:32:49] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:33:00,220 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:33:00] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:35:16,805 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:35:16] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:35:17,603 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:35:17] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:35:17,707 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:35:17] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:35:17,855 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:35:17] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:35:18,786 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:35:18] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:35:20,393 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:35:20] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 15:35:20,496 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:35:20] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 15:39:26,426 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:39:26] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:39:26,730 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:39:26] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:39:26,789 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:39:26] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:39:26,937 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:39:26] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:39:28,241 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:39:28] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:39:29,429 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:39:29] "POST /sensor/get_sensors HTTP/1.1" 400 -
+2018-03-13 15:39:29,524 - werkzeug - INFO - 192.168.0.106 - - [13/Mar/2018 15:39:29] "POST /router/get_actuators HTTP/1.1" 400 -
+2018-03-13 15:39:29,784 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:39:29] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:39:29,972 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:39:29] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:39:30,046 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:39:30] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:39:37,383 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:39:37] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 15:45:55,027 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:45:55] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 15:45:55,364 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:45:55] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:45:55,466 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:45:55] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 15:45:55,516 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:45:55] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 15:45:58,371 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 15:45:58] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:06:05,227 - root - INFO - Connected to MQTT Broker
+2018-03-13 16:06:06,980 - root - INFO - Creating Flask init_app
+2018-03-13 16:06:07,027 - root - INFO - Registering Blueprints
+2018-03-13 16:06:07,046 - root - INFO - Starting Flask Server
+2018-03-13 16:06:07,046 - root - INFO - Connected to MQTT Broker
+2018-03-13 16:06:07,242 - werkzeug - INFO -  * Running on http://192.168.0.113:5001/ (Press CTRL+C to quit)
+2018-03-13 16:06:38,551 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-13 16:06:38,551 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-13 16:06:39,244 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:06:39] "POST /user/login HTTP/1.1" 200 -
+2018-03-13 16:06:39,568 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:06:39] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:06:39,614 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:06:39] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:06:39,660 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:06:39] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:06:43,795 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:06:43] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:09:10,394 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:09:10] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:11:22,966 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:11:22] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:12:03,314 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:12:03] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:16:32,543 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:16:32] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:17:03,674 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:03] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:17:03,738 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:03] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:17:03,789 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:03] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-13 16:17:03,839 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:03] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:17:05,854 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:05] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-13 16:17:05,913 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:05] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:17:05,970 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:05] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-13 16:17:10,001 - werkzeug - INFO - 192.168.0.135 - - [13/Mar/2018 16:17:10] "POST /sensor/get_sensors HTTP/1.1" 200 -
