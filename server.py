@@ -14,7 +14,7 @@ import logging
 import config
 
 logger = logging.getLogger()
-fhandler = logging.FileHandler(filename='mylog.log', mode='a')
+fhandler = logging.FileHandler(filename='mylog.log', mode='w')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)

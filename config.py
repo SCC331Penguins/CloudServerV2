@@ -1,6 +1,6 @@
 DEBUG = True
 DEBUG_MQTT = True
-IP = "192.168.0.113"
+IP = "192.168.0.114"
 SQLALCHEMY_DATABASE_URI = 'sqlite:///C:/CloudServer/database.db'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SECRET_KEY = 'scc331sharedsecretkey'
