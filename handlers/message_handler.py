@@ -61,7 +61,7 @@ typeDict = {
     MessageCreator.NOTIFICATION: NOTIFICATION,
     MessageCreator.ACTIVE_SENSORS: ACTIVE_SENSORS,
     MessageCreator.REG_ACTUATOR: REG_ACTUATOR,
-    MessageCreator.SAVE_DATA: SAVE_DATA,
+    # MessageCreator.SAVE_DATA: SAVE_DATA,
     MessageCreator.ROOM_REQUEST: ROOM_REQUEST,
 }
 

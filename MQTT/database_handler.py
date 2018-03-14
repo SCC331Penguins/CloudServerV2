@@ -50,7 +50,7 @@ class DatabaseHandler():
 
     def record_reading(self, timestamp, router_id, data):
         sensor_id = data['id']
-        temperature = data['temperature']
+        temperature = data['temp']
         humidity = data['humidity']
         movement = data['movement']
         light = data['light']

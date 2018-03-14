@@ -58,10 +58,12 @@ def authenticate_user():
     username = request.json['username']
     result = DatabaseHandler().get_user(username=username)
     if result is None:
-        return jsonify(result=False), 200
+        return jsonify(result=False), 201
     id = result.id
     result = DatabaseHandler().add_auth_user(id, router_id)
-    return jsonify(result=result), 200
+    if result is False:
+        return jsonify(False), 201
+    return jsonify(id=id, username=username), 200
 
 
 @user.route("/auth_user_remove", methods=['POST'])
@@ -73,9 +75,10 @@ def remove_authenticated_user():
     username = request.json['username']
     result = DatabaseHandler().get_user(username=username)
     if result is None:
-        return jsonify(result=False), 200
+        return jsonify(result=False), 201
     id = result.id
     result = DatabaseHandler().remove_auth_user(id, router_id)
+<<<<<<< Updated upstream
     return jsonify(result=result), 200
 
 
@@ -85,3 +88,19 @@ def remove_authenticated_user():
 @print_request
 def remove_authenticated_user():
     
+=======
+    if result is False:
+        return jsonify(False), 201
+    return jsonify(id=id, username=username), 200
+
+
+@user.route("/get_auth_users", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+def get_authed():
+    router_id = request.json['router_id']
+    result = DatabaseHandler().get_authed_users(router_id)
+    if result is None:
+        return jsonify(result=[]), 201
+    return jsonify(result), 200
+>>>>>>> Stashed changes

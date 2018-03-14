@@ -1,6 +1,372 @@
+<<<<<<< Updated upstream
 2018-03-14 20:12:34,503 - root - INFO - Creating Flask init_app
 2018-03-14 20:12:34,550 - root - INFO - Registering Blueprints
 2018-03-14 20:12:34,568 - root - INFO - Starting Flask Server
 2018-03-14 20:12:34,568 - root - INFO - Connected to MQTT Broker
 2018-03-14 20:12:34,784 - werkzeug - INFO -  * Running on http://192.168.0.114:5001/ (Press CTRL+C to quit)
 2018-03-14 20:13:00,863 - werkzeug - INFO - 192.168.0.114 - - [14/Mar/2018 20:13:00] "POST /user/get_auth_users HTTP/1.1" 404 -
+=======
+2018-03-14 17:44:20,588 - root - INFO - Creating Flask init_app
+2018-03-14 17:44:20,631 - root - INFO - Registering Blueprints
+2018-03-14 17:44:20,648 - root - INFO - Starting Flask Server
+2018-03-14 17:44:20,649 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:44:20,812 - werkzeug - INFO -  * Running on http://192.168.0.114:5001/ (Press CTRL+C to quit)
+2018-03-14 17:44:21,062 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:44:21] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:44:23,995 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:44:23] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:44:24,735 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:26,371 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:44:26] "POST /user/auth_user_add HTTP/1.1" 200 -
+2018-03-14 17:44:26,451 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:44:26] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:44:27,534 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:27,981 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:44:27] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:44:31,155 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:44:31] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:44:32,349 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:44:32] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:44:34,739 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:37,539 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:44,739 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:47,538 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:54,741 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:57,544 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:44:58,326 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:44:58] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:44:59,521 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:44:59] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:44:59,696 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:44:59] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:45:01,475 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:45:01] "POST /user/get_auth_users HTTP/1.1" 200 -
+2018-03-14 17:45:04,746 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:07,540 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:11,174 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:11] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:45:12,821 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:12] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:45:14,745 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:14,974 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:14] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:45:15,021 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:15] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:45:17,545 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:17,968 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:17] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:45:18,024 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:18] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:45:22,822 - root - INFO - Sending Message: <MQTT Type: COM, Payload: {'MAC': 'CC:D2:9B:F4:41:2E', 'command': 'turnOn'}> to topic: SCC33102_R01
+2018-03-14 17:45:22,827 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:22] "POST /api/actuator_control HTTP/1.1" 200 -
+2018-03-14 17:45:24,746 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:27,542 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:34,751 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:37,549 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:44,752 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:46,127 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:45:46] "POST /user/auth_user_remove HTTP/1.1" 200 -
+2018-03-14 17:45:47,550 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:49,816 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:49] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:45:50,751 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:45:50] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:45:54,753 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:45:57,550 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:04,760 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:07,555 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:14,758 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:17,553 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:24,764 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:27,561 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:34,765 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:35,469 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:35] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:46:35,568 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:35] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 17:46:35,643 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:35] "POST /user/get_auth_users HTTP/1.1" 200 -
+2018-03-14 17:46:35,710 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:35] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:46:35,805 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:35] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:46:37,564 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:43,341 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:43] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:46:43,567 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:43] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:46:44,774 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:46,088 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:46:46] "POST /user/get_auth_users HTTP/1.1" 200 -
+2018-03-14 17:46:47,560 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:54,774 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:46:57,560 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:04,775 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:07,560 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:14,774 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:17,565 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:24,784 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:27,564 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:34,777 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:37,569 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:44,780 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:47,570 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:54,808 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:47:57,571 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:04,780 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:07,571 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:14,791 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:17,573 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:23,146 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-14 17:48:23,146 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-14 17:48:23,855 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:23] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 17:48:24,291 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:24] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:48:24,407 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:24] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 17:48:24,457 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:24] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:48:24,792 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:26,913 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:26] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:48:27,577 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:28,320 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:28] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:48:28,428 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:28] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:48:34,788 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:37,579 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:44,830 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:47,344 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:48:47] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 17:48:47,591 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:47,593 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:48:47] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 17:48:47,634 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:48:47] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:48:47,914 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 17:48:47] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:48:49,482 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:48:49] "POST /user/get_auth_users HTTP/1.1" 200 -
+2018-03-14 17:48:54,793 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:48:57,580 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:04,791 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:07,581 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:14,922 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:17,818 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:24,890 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:27,700 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:34,823 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:37,589 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:44,998 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:47,690 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:55,146 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:49:57,799 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:01,777 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:01] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 17:50:02,465 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:02] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 17:50:02,985 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:02] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:50:04,507 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:04] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:50:04,913 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:05,778 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:05] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:50:07,018 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:07] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:50:07,665 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:08,525 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:08] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:50:09,261 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:09] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:50:12,670 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:12] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:50:14,034 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:14] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:50:14,886 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:16,707 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:16] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:50:17,901 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:19,584 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:19] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:50:21,070 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:21] "POST /sensor/get_sensors HTTP/1.1" 200 -
+2018-03-14 17:50:21,577 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:21] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 17:50:24,808 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:26,497 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:26] "POST /user/get_auth_users HTTP/1.1" 200 -
+2018-03-14 17:50:27,596 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:33,000 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:33] "POST /user/auth_user_add HTTP/1.1" 200 -
+2018-03-14 17:50:34,810 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:37,598 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:44,823 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:45,202 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:50:45] "POST /user/auth_user_add HTTP/1.1" 200 -
+2018-03-14 17:50:47,682 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:54,817 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:50:57,604 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:04,817 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:07,605 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:14,898 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:17,603 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:24,841 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:25,017 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:25] "POST /user/auth_user_remove HTTP/1.1" 200 -
+2018-03-14 17:51:27,836 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:35,165 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:37,669 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:39,263 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:39] "POST /user/auth_user_add HTTP/1.1" 201 -
+2018-03-14 17:51:45,452 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:46,572 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:46] "POST /user/auth_user_add HTTP/1.1" 200 -
+2018-03-14 17:51:47,910 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:51,637 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:51] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 17:51:51,793 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:51] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:51:51,850 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:51] "POST /user/get_auth_users HTTP/1.1" 200 -
+2018-03-14 17:51:51,905 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:51] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:51:51,970 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:51:51] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:51:54,827 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:51:57,621 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:04,829 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:07,612 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:14,830 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:17,615 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:24,843 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:27,620 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:34,836 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:37,624 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:42,855 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:52:42] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 17:52:43,147 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:52:43] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:52:44,187 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:52:44] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:52:44,905 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:45,091 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:52:45] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:52:45,229 - werkzeug - INFO - 192.168.0.109 - - [14/Mar/2018 17:52:45] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 17:52:47,705 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:55,017 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:52:57,874 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:05,021 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:07,794 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:15,045 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:17,752 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:25,003 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:27,738 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:34,958 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:37,752 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:44,937 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:47,740 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:54,985 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:53:57,759 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:04,980 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:07,733 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:14,934 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:17,734 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:24,943 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:27,701 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:35,023 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:37,738 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:44,958 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:47,787 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:54,986 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:54:57,646 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:04,868 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:07,647 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:14,873 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:17,650 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:24,874 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:27,651 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:34,876 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:37,654 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:44,913 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:47,657 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:54,884 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:55:57,661 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:04,890 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:07,661 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:14,895 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:17,663 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:24,889 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:27,675 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:34,890 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:37,668 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:44,959 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:47,668 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:54,900 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:56:57,673 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:04,897 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:07,670 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:14,900 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:17,673 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:24,902 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:27,676 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:34,906 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:37,681 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:44,906 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:47,682 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:54,910 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:57:57,685 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:04,922 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:07,685 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:14,910 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:17,688 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:24,912 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:27,693 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:34,915 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:37,694 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:44,917 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:47,693 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:54,918 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:58:57,696 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:04,919 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:07,695 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:14,922 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:17,699 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:24,927 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:27,701 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:34,944 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:37,705 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:44,930 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:47,708 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:54,932 - root - DEBUG - Message Recieved of type PING
+2018-03-14 17:59:57,707 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:04,934 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:07,707 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:14,936 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:17,710 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:24,939 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:27,709 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:34,942 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:37,711 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:44,946 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:47,714 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:54,948 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:00:57,717 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:04,951 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:07,718 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:14,954 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:17,719 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:24,961 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:27,724 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:34,960 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:37,723 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:44,964 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:47,728 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:54,967 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:01:57,731 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:04,969 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:07,736 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:14,971 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:17,731 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:24,972 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:27,732 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:34,976 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:37,738 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:44,977 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:47,743 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:54,980 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:02:57,740 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:04,985 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:07,739 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:14,984 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:17,741 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:25,053 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:27,745 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:34,991 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:37,749 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:45,008 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:48,024 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:54,995 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:03:57,752 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:04,996 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:07,753 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:14,998 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:17,756 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:24,998 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:27,761 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:35,001 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:37,765 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:45,007 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:47,765 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:55,007 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:04:57,766 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:05,008 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:07,771 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:15,010 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:17,768 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:25,012 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:27,772 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:35,015 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:37,774 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:45,031 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:47,778 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:55,018 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:05:57,778 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:05,022 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:07,778 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:15,023 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:17,782 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:25,027 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:27,782 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:35,029 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:37,785 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:45,032 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:47,788 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:55,036 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:06:57,791 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:07:05,034 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:07:07,792 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:12:52,218 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:44:59,094 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:45:00,718 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:45:00] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 18:45:01,052 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:45:01] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 18:45:01,074 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:45:01] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 18:45:01,196 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:45:01] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 18:46:39,107 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:46:39] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 18:46:39,345 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:46:39] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 18:46:39,382 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:46:39] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 18:46:39,538 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:46:39] "POST /router/get_router HTTP/1.1" 200 -
+>>>>>>> Stashed changes

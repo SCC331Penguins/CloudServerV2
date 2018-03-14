@@ -263,6 +263,14 @@ class DatabaseHandler():
                 return False
             return True
 
+        def get_authed_users(self, router_id):
+            result = db.session.query(self.RouterAuth).filter(self.RouterAuth.router_id == router_id).all()
+            result_list = []
+            for r in result[:]:
+                username = self.get_user_from_id(r.user_id)
+                result_list.append({"id": r.user_id, "username": username})
+            return result_list
+
         def get_routers(self):
             routers = db.session.query(self.Router).all()
             if len(routers) == 0:
