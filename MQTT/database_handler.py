@@ -50,7 +50,7 @@ class DatabaseHandler():
 
     def record_reading(self, timestamp, router_id, data):
         sensor_id = data['id']
-        temperature = data['temperature']
+        temperature = data['temp']
         humidity = data['humidity']
         movement = data['movement']
         light = data['light']
@@ -139,3 +139,13 @@ class DatabaseHandler():
                 break
             result_array.append(fetched_result)
         return result_array
+    def plzMakeSQL(self, table, columns, data):
+        SQL = "INSERT INTO {} ('{}') VALUES('{}') ".format(str(table), '\',\''.join(columns),'\',\''.join(data))
+        return SQL;
+
+    # Add a Log Message to DB
+    def add_warning_record(self, record, originType, originName, ):
+        columns = ["w_level","w_msg", "w_time", "originType", "originName"]
+        data = [record['level'], record['message'], record['time'], originType, originName]
+        self.execute_query(self.plzMakeSQL("warnings", columns, data));
+        pass

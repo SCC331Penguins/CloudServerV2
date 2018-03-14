@@ -1,7 +1,6 @@
 from util.auth.authenticator import verify_token
 import logging
 from MQTT.database_handler import DatabaseHandler
-from .database_handler import DatabaseHandler as DBHandler
 from handlers.message_creator import MessageCreator
 from handlers.notification_handler import send_notification
 from datetime import datetime
@@ -56,7 +55,8 @@ def ROOM_REQUEST(message):
     return message_to_send
 
 def SEND_LOG_DATA(message):
-    DBHandler().add_warning_record(message.payload, "Pi", message.payload['topic'])
+    print(message)
+    DatabaseHandler().add_warning_record(message.payload, "Router", message.payload['R_id'])
 
 # What to do with what type
 typeDict = {
@@ -79,8 +79,9 @@ class MessageHandler():
 
     def perform(self):
         s = typeDict.get(self.type)
+        print(self.payload)
         if s is not None:
-            logger.debug("Message Recieved of type %s", self.type)
+            logger.debug("Message Received of type %s", self.type)
             return s(self)
         return None
 

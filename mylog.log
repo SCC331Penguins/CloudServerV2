@@ -4491,3 +4491,578 @@
 2018-03-14 12:26:29,351 - root - INFO - Starting Flask Server
 2018-03-14 12:26:29,351 - root - INFO - Connected to MQTT Broker
 2018-03-14 12:26:29,358 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:34:13,595 - root - INFO - Creating Flask init_app
+2018-03-14 17:34:13,659 - root - INFO - Registering Blueprints
+2018-03-14 17:34:13,674 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:34:13,675 - root - INFO - Starting Flask Server
+2018-03-14 17:34:13,715 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:36:39,452 - root - INFO - Creating Flask init_app
+2018-03-14 17:36:39,495 - root - INFO - Registering Blueprints
+2018-03-14 17:36:39,512 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:36:39,512 - root - INFO - Starting Flask Server
+2018-03-14 17:36:39,526 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:38:26,777 - root - INFO - Creating Flask init_app
+2018-03-14 17:38:26,818 - root - INFO - Registering Blueprints
+2018-03-14 17:38:26,832 - root - INFO - Starting Flask Server
+2018-03-14 17:38:26,832 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:38:26,843 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:38:37,364 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 17:38:37] "GET / HTTP/1.1" 404 -
+2018-03-14 17:38:37,408 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 17:38:37] "GET /favicon.ico HTTP/1.1" 404 -
+2018-03-14 17:38:46,386 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 17:38:46] "GET /user/login HTTP/1.1" 405 -
+2018-03-14 17:39:05,685 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 17:39:05] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 17:43:32,033 - root - INFO - Creating Flask init_app
+2018-03-14 17:43:32,069 - root - INFO - Registering Blueprints
+2018-03-14 17:43:32,081 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:43:32,082 - root - INFO - Starting Flask Server
+2018-03-14 17:43:32,098 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:44:00,071 - root - INFO - Creating Flask init_app
+2018-03-14 17:44:00,122 - root - INFO - Registering Blueprints
+2018-03-14 17:44:00,136 - root - INFO - Starting Flask Server
+2018-03-14 17:44:00,136 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:44:00,152 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:44:36,693 - root - INFO - Creating Flask init_app
+2018-03-14 17:44:36,734 - root - INFO - Registering Blueprints
+2018-03-14 17:44:36,747 - root - INFO - Starting Flask Server
+2018-03-14 17:44:36,747 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:44:36,765 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:44:56,792 - root - INFO - Creating Flask init_app
+2018-03-14 17:44:56,834 - root - INFO - Registering Blueprints
+2018-03-14 17:44:56,848 - root - INFO - Starting Flask Server
+2018-03-14 17:44:56,848 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:44:56,860 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:45:12,261 - root - INFO - Creating Flask init_app
+2018-03-14 17:45:12,300 - root - INFO - Registering Blueprints
+2018-03-14 17:45:12,315 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:45:12,316 - root - INFO - Starting Flask Server
+2018-03-14 17:45:12,335 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 17:47:33,770 - root - INFO - Creating Flask init_app
+2018-03-14 17:47:33,816 - root - INFO - Registering Blueprints
+2018-03-14 17:47:33,833 - root - INFO - Starting Flask Server
+2018-03-14 17:47:33,835 - root - INFO - Connected to MQTT Broker
+2018-03-14 17:47:33,847 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:13:39,514 - root - INFO - Creating Flask init_app
+2018-03-14 18:14:06,889 - root - INFO - Creating Flask init_app
+2018-03-14 18:14:06,950 - root - INFO - Registering Blueprints
+2018-03-14 18:14:08,008 - root - INFO - Starting Flask Server
+2018-03-14 18:14:08,009 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:14:08,029 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:14:16,975 - root - INFO - Creating Flask init_app
+2018-03-14 18:14:17,012 - root - INFO - Registering Blueprints
+2018-03-14 18:14:17,026 - root - INFO - Starting Flask Server
+2018-03-14 18:14:17,026 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:14:17,036 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:15:58,307 - root - INFO - Creating Flask init_app
+2018-03-14 18:15:58,348 - root - INFO - Registering Blueprints
+2018-03-14 18:15:58,362 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:15:58,362 - root - INFO - Starting Flask Server
+2018-03-14 18:15:58,380 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:32:02,624 - root - INFO - Creating Flask init_app
+2018-03-14 18:32:02,663 - root - INFO - Registering Blueprints
+2018-03-14 18:32:02,677 - root - INFO - Starting Flask Server
+2018-03-14 18:32:02,677 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:32:02,689 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:33:29,341 - root - INFO - Creating Flask init_app
+2018-03-14 18:33:29,383 - root - INFO - Registering Blueprints
+2018-03-14 18:33:29,396 - root - INFO - Starting Flask Server
+2018-03-14 18:33:29,396 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:33:29,409 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:33:41,253 - root - INFO - Creating Flask init_app
+2018-03-14 18:33:41,295 - root - INFO - Registering Blueprints
+2018-03-14 18:33:41,308 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:33:41,308 - root - INFO - Starting Flask Server
+2018-03-14 18:33:41,319 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:34:18,742 - root - INFO - Creating Flask init_app
+2018-03-14 18:34:18,805 - root - INFO - Registering Blueprints
+2018-03-14 18:34:18,818 - root - INFO - Starting Flask Server
+2018-03-14 18:34:18,818 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:34:18,836 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:34:55,012 - root - INFO - Creating Flask init_app
+2018-03-14 18:34:55,053 - root - INFO - Registering Blueprints
+2018-03-14 18:34:55,067 - root - INFO - Starting Flask Server
+2018-03-14 18:34:55,067 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:34:55,080 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:36:07,775 - root - INFO - Creating Flask init_app
+2018-03-14 18:36:07,829 - root - INFO - Registering Blueprints
+2018-03-14 18:36:07,850 - root - INFO - Starting Flask Server
+2018-03-14 18:36:07,850 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:36:07,862 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:39:57,400 - root - INFO - Creating Flask init_app
+2018-03-14 18:39:57,440 - root - INFO - Registering Blueprints
+2018-03-14 18:39:57,453 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:39:57,454 - root - INFO - Starting Flask Server
+2018-03-14 18:39:57,467 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:40:12,202 - root - INFO - Creating Flask init_app
+2018-03-14 18:40:12,270 - root - INFO - Registering Blueprints
+2018-03-14 18:40:12,283 - root - INFO - Starting Flask Server
+2018-03-14 18:40:12,283 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:40:12,300 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:43:14,367 - root - INFO - Creating Flask init_app
+2018-03-14 18:43:14,434 - root - INFO - Registering Blueprints
+2018-03-14 18:43:14,447 - root - INFO - Starting Flask Server
+2018-03-14 18:43:14,447 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:43:14,460 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:48:39,933 - root - INFO - Creating Flask init_app
+2018-03-14 18:48:39,973 - root - INFO - Registering Blueprints
+2018-03-14 18:48:39,986 - root - INFO - Starting Flask Server
+2018-03-14 18:48:39,986 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:48:40,000 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:50:17,846 - root - INFO - Creating Flask init_app
+2018-03-14 18:50:17,890 - root - INFO - Registering Blueprints
+2018-03-14 18:50:17,908 - root - INFO - Starting Flask Server
+2018-03-14 18:50:17,908 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:50:17,921 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:51:38,431 - root - INFO - Creating Flask init_app
+2018-03-14 18:51:38,473 - root - INFO - Registering Blueprints
+2018-03-14 18:51:38,487 - root - INFO - Starting Flask Server
+2018-03-14 18:51:38,487 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:51:38,500 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:52:11,915 - root - INFO - Creating Flask init_app
+2018-03-14 18:52:11,958 - root - INFO - Registering Blueprints
+2018-03-14 18:52:11,973 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:52:11,973 - root - INFO - Starting Flask Server
+2018-03-14 18:52:11,986 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:54:19,796 - root - INFO - Creating Flask init_app
+2018-03-14 18:54:19,835 - root - INFO - Registering Blueprints
+2018-03-14 18:54:19,849 - root - INFO - Starting Flask Server
+2018-03-14 18:54:19,849 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:54:19,861 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:55:18,811 - root - INFO - Creating Flask init_app
+2018-03-14 18:55:18,852 - root - INFO - Registering Blueprints
+2018-03-14 18:55:18,867 - root - INFO - Starting Flask Server
+2018-03-14 18:55:18,867 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:55:18,879 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:57:29,088 - root - INFO - Creating Flask init_app
+2018-03-14 18:57:29,127 - root - INFO - Registering Blueprints
+2018-03-14 18:57:29,142 - root - INFO - Starting Flask Server
+2018-03-14 18:57:29,142 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:57:29,152 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:57:35,077 - root - INFO - Creating Flask init_app
+2018-03-14 18:57:35,119 - root - INFO - Registering Blueprints
+2018-03-14 18:57:35,134 - root - INFO - Starting Flask Server
+2018-03-14 18:57:35,134 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:57:35,146 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:58:06,472 - root - INFO - Creating Flask init_app
+2018-03-14 18:58:06,513 - root - INFO - Registering Blueprints
+2018-03-14 18:58:06,526 - root - INFO - Starting Flask Server
+2018-03-14 18:58:06,526 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:58:06,536 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 18:58:58,901 - root - INFO - Creating Flask init_app
+2018-03-14 18:58:59,024 - root - INFO - Registering Blueprints
+2018-03-14 18:58:59,128 - root - INFO - Starting Flask Server
+2018-03-14 18:58:59,128 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:58:59,227 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 19:30:59,517 - root - INFO - Creating Flask init_app
+2018-03-14 19:30:59,648 - root - INFO - Registering Blueprints
+2018-03-14 19:31:00,118 - root - INFO - Connected to MQTT Broker
+2018-03-14 19:31:00,118 - root - INFO - Starting Flask Server
+2018-03-14 19:31:00,420 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 19:40:42,445 - root - INFO - Creating Flask init_app
+2018-03-14 19:40:42,595 - root - INFO - Registering Blueprints
+2018-03-14 19:40:42,690 - root - INFO - Starting Flask Server
+2018-03-14 19:40:42,690 - root - INFO - Connected to MQTT Broker
+2018-03-14 19:40:42,821 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 19:42:15,097 - root - INFO - Creating Flask init_app
+2018-03-14 19:42:15,261 - root - INFO - Registering Blueprints
+2018-03-14 19:42:15,374 - root - INFO - Starting Flask Server
+2018-03-14 19:42:15,375 - root - INFO - Connected to MQTT Broker
+2018-03-14 19:42:15,483 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 19:44:29,809 - root - INFO - Creating Flask init_app
+2018-03-14 19:44:29,947 - root - INFO - Registering Blueprints
+2018-03-14 19:44:30,051 - root - INFO - Starting Flask Server
+2018-03-14 19:44:30,052 - root - INFO - Connected to MQTT Broker
+2018-03-14 19:44:30,190 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 19:47:10,482 - root - INFO - Creating Flask init_app
+2018-03-14 19:47:10,618 - root - INFO - Registering Blueprints
+2018-03-14 19:47:10,724 - root - INFO - Connected to MQTT Broker
+2018-03-14 19:47:10,725 - root - INFO - Starting Flask Server
+2018-03-14 19:47:10,947 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:10:04,003 - root - INFO - Creating Flask init_app
+2018-03-14 20:10:04,190 - root - INFO - Registering Blueprints
+2018-03-14 20:10:04,335 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:10:04,335 - root - INFO - Starting Flask Server
+2018-03-14 20:10:04,600 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:14:29,694 - root - INFO - Creating Flask init_app
+2018-03-14 20:14:29,903 - root - INFO - Registering Blueprints
+2018-03-14 20:14:30,039 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:14:30,040 - root - INFO - Starting Flask Server
+2018-03-14 20:14:30,350 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:15:18,233 - root - INFO - Creating Flask init_app
+2018-03-14 20:15:18,405 - root - INFO - Registering Blueprints
+2018-03-14 20:15:18,812 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:15:18,813 - root - INFO - Starting Flask Server
+2018-03-14 20:15:19,105 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:15:59,195 - root - INFO - Creating Flask init_app
+2018-03-14 20:15:59,381 - root - INFO - Registering Blueprints
+2018-03-14 20:15:59,510 - root - INFO - Starting Flask Server
+2018-03-14 20:15:59,512 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:15:59,653 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:19:20,369 - root - INFO - Creating Flask init_app
+2018-03-14 20:19:20,554 - root - INFO - Registering Blueprints
+2018-03-14 20:19:20,715 - root - INFO - Starting Flask Server
+2018-03-14 20:19:20,719 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:19:20,834 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:19:41,766 - root - INFO - Creating Flask init_app
+2018-03-14 20:19:41,939 - root - INFO - Registering Blueprints
+2018-03-14 20:19:42,083 - root - INFO - Starting Flask Server
+2018-03-14 20:19:42,086 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:19:42,214 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:20:02,586 - root - INFO - Creating Flask init_app
+2018-03-14 20:20:02,768 - root - INFO - Registering Blueprints
+2018-03-14 20:20:02,911 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:20:02,912 - root - INFO - Starting Flask Server
+2018-03-14 20:20:03,194 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:24:36,299 - root - INFO - Creating Flask init_app
+2018-03-14 20:24:36,449 - root - INFO - Registering Blueprints
+2018-03-14 20:24:36,585 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:24:36,585 - root - INFO - Starting Flask Server
+2018-03-14 20:24:36,818 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:31:03,008 - root - INFO - Creating Flask init_app
+2018-03-14 20:31:03,179 - root - INFO - Registering Blueprints
+2018-03-14 20:31:03,310 - root - INFO - Starting Flask Server
+2018-03-14 20:31:03,311 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:31:03,456 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:32:02,636 - root - INFO - Creating Flask init_app
+2018-03-14 20:32:02,812 - root - INFO - Registering Blueprints
+2018-03-14 20:32:02,939 - root - INFO - Starting Flask Server
+2018-03-14 20:32:02,940 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:32:03,072 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:33:22,822 - root - INFO - Creating Flask init_app
+2018-03-14 20:33:23,022 - root - INFO - Registering Blueprints
+2018-03-14 20:33:23,165 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:33:23,165 - root - INFO - Starting Flask Server
+2018-03-14 20:33:23,433 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:33:39,381 - root - INFO - Creating Flask init_app
+2018-03-14 20:33:39,722 - root - INFO - Registering Blueprints
+2018-03-14 20:33:39,846 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:33:39,847 - root - INFO - Starting Flask Server
+2018-03-14 20:33:40,091 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:33:48,491 - root - INFO - Creating Flask init_app
+2018-03-14 20:33:48,684 - root - INFO - Registering Blueprints
+2018-03-14 20:33:48,856 - root - INFO - Starting Flask Server
+2018-03-14 20:33:48,856 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:33:48,985 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:37:01,788 - root - INFO - Creating Flask init_app
+2018-03-14 20:37:01,920 - root - INFO - Registering Blueprints
+2018-03-14 20:37:02,023 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:37:02,023 - root - INFO - Starting Flask Server
+2018-03-14 20:38:03,862 - root - INFO - Creating Flask init_app
+2018-03-14 20:38:03,991 - root - INFO - Registering Blueprints
+2018-03-14 20:38:04,110 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:38:04,110 - root - INFO - Starting Flask Server
+2018-03-14 20:38:04,310 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:38:10,703 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 20:38:10,932 - root - DEBUG - Message Received of type DATA
+2018-03-14 20:50:49,185 - root - INFO - Creating Flask init_app
+2018-03-14 20:50:49,350 - root - INFO - Registering Blueprints
+2018-03-14 20:50:49,458 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:50:49,458 - root - INFO - Starting Flask Server
+2018-03-14 20:50:49,678 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:50:59,235 - root - DEBUG - Message Received of type PING
+2018-03-14 20:51:09,236 - root - DEBUG - Message Received of type PING
+2018-03-14 20:51:19,236 - root - DEBUG - Message Received of type PING
+2018-03-14 20:51:29,240 - root - DEBUG - Message Received of type PING
+2018-03-14 20:51:31,058 - root - DEBUG - Message Received of type DATA
+2018-03-14 20:51:47,538 - root - INFO - Creating Flask init_app
+2018-03-14 20:51:47,671 - root - INFO - Registering Blueprints
+2018-03-14 20:51:47,758 - root - INFO - Starting Flask Server
+2018-03-14 20:51:47,759 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:51:47,907 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:51:52,064 - root - DEBUG - Message Received of type PING
+2018-03-14 20:52:02,065 - root - DEBUG - Message Received of type PING
+2018-03-14 20:52:12,069 - root - DEBUG - Message Received of type PING
+2018-03-14 20:52:22,071 - root - DEBUG - Message Received of type PING
+2018-03-14 20:52:31,061 - root - DEBUG - Message Received of type DATA
+2018-03-14 20:52:55,941 - root - INFO - Creating Flask init_app
+2018-03-14 20:52:56,088 - root - INFO - Registering Blueprints
+2018-03-14 20:52:56,206 - root - INFO - Starting Flask Server
+2018-03-14 20:52:56,207 - root - INFO - Connected to MQTT Broker
+2018-03-14 20:52:56,303 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 20:53:03,370 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 20:53:03,526 - root - DEBUG - Message Received of type PING
+2018-03-14 20:53:13,375 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 20:53:13,570 - root - DEBUG - Message Received of type PING
+2018-03-14 20:53:23,377 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 20:53:23,571 - root - DEBUG - Message Received of type PING
+2018-03-14 20:53:33,381 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 20:53:33,593 - root - DEBUG - Message Received of type PING
+2018-03-14 20:53:43,384 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 20:53:43,582 - root - DEBUG - Message Received of type PING
+2018-03-14 20:53:52,369 - root - DEBUG - Message Received of type DATA
+2018-03-14 21:06:58,487 - root - INFO - Creating Flask init_app
+2018-03-14 21:06:58,668 - root - INFO - Registering Blueprints
+2018-03-14 21:06:58,781 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:06:58,782 - root - INFO - Starting Flask Server
+2018-03-14 21:06:58,999 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:07:03,692 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:07:03,864 - root - DEBUG - Message Received of type PING
+2018-03-14 21:07:13,697 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:07:13,908 - root - DEBUG - Message Received of type PING
+2018-03-14 21:07:23,698 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:07:23,914 - root - DEBUG - Message Received of type PING
+2018-03-14 21:07:33,704 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:07:33,913 - root - DEBUG - Message Received of type PING
+2018-03-14 21:07:43,710 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:07:43,916 - root - DEBUG - Message Received of type PING
+2018-03-14 21:07:52,372 - root - DEBUG - Message Received of type DATA
+2018-03-14 21:34:54,103 - root - INFO - Creating Flask init_app
+2018-03-14 21:34:54,139 - root - INFO - Registering Blueprints
+2018-03-14 21:34:55,167 - root - INFO - Starting Flask Server
+2018-03-14 21:34:55,167 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:34:55,264 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:44:33,441 - root - INFO - Creating Flask init_app
+2018-03-14 21:44:33,545 - root - INFO - Registering Blueprints
+2018-03-14 21:44:33,624 - root - INFO - Starting Flask Server
+2018-03-14 21:44:33,624 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:44:33,715 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:44:52,455 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:44:52] "GET /devPanel/Routers HTTP/1.1" 404 -
+2018-03-14 21:45:59,297 - root - INFO - Creating Flask init_app
+2018-03-14 21:45:59,439 - root - INFO - Registering Blueprints
+2018-03-14 21:45:59,563 - root - INFO - Starting Flask Server
+2018-03-14 21:45:59,563 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:45:59,658 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:46:04,495 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:46:04] "GET /devPanel/Routers HTTP/1.1" 405 -
+2018-03-14 21:46:23,418 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:46:23] "GET /devPanel/Routers HTTP/1.1" 405 -
+2018-03-14 21:46:27,692 - root - INFO - Creating Flask init_app
+2018-03-14 21:46:27,890 - root - INFO - Registering Blueprints
+2018-03-14 21:46:27,971 - root - INFO - Starting Flask Server
+2018-03-14 21:46:27,972 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:46:28,096 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:46:30,492 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:46:30] "GET /devPanel/Routers HTTP/1.1" 200 -
+2018-03-14 21:47:01,304 - root - INFO - Creating Flask init_app
+2018-03-14 21:47:01,442 - root - INFO - Registering Blueprints
+2018-03-14 21:47:01,541 - root - INFO - Starting Flask Server
+2018-03-14 21:47:01,541 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:47:01,658 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:47:05,068 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:47:05] "GET /devPanel/Routers HTTP/1.1" 200 -
+2018-03-14 21:47:13,089 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:47:13] "GET /devPanel/Routers HTTP/1.1" 200 -
+2018-03-14 21:47:52,947 - root - INFO - Creating Flask init_app
+2018-03-14 21:47:53,097 - root - INFO - Registering Blueprints
+2018-03-14 21:47:53,202 - root - INFO - Starting Flask Server
+2018-03-14 21:47:53,202 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:47:53,335 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:47:54,298 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:47:54] "GET /devPanel/Routers HTTP/1.1" 401 -
+2018-03-14 21:48:07,688 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:48:07] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 21:57:04,776 - root - INFO - Creating Flask init_app
+2018-03-14 21:57:04,808 - root - INFO - Registering Blueprints
+2018-03-14 21:57:05,192 - root - INFO - Connected to MQTT Broker
+2018-03-14 21:57:05,192 - root - INFO - Starting Flask Server
+2018-03-14 21:57:05,375 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 21:57:14,680 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:57:14,822 - root - DEBUG - Message Received of type PING
+2018-03-14 21:57:15,914 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-14 21:57:15,915 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-14 21:57:16,384 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 21:57:16] "POST /user/login HTTP/1.1" 500 -
+2018-03-14 21:57:24,681 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:57:24,834 - root - DEBUG - Message Received of type PING
+2018-03-14 21:57:34,682 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:57:34,858 - root - DEBUG - Message Received of type PING
+2018-03-14 21:57:44,683 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:57:44,848 - root - DEBUG - Message Received of type PING
+2018-03-14 21:57:54,685 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:57:54,871 - root - DEBUG - Message Received of type PING
+2018-03-14 21:58:04,688 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:58:04,851 - root - DEBUG - Message Received of type PING
+2018-03-14 21:58:14,689 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:58:14,852 - root - DEBUG - Message Received of type PING
+2018-03-14 21:58:24,690 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:58:24,875 - root - DEBUG - Message Received of type PING
+2018-03-14 21:58:34,691 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 21:58:34,877 - root - DEBUG - Message Received of type PING
+2018-03-14 22:00:18,636 - root - INFO - Creating Flask init_app
+2018-03-14 22:00:18,765 - root - INFO - Registering Blueprints
+2018-03-14 22:00:18,848 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:00:18,848 - root - INFO - Starting Flask Server
+2018-03-14 22:00:18,998 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:00:23,076 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-14 22:00:23,077 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-14 22:00:23,518 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:00:23] "POST /user/login HTTP/1.1" 500 -
+2018-03-14 22:00:24,703 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:00:24,856 - root - DEBUG - Message Received of type PING
+2018-03-14 22:00:34,704 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:00:35,501 - root - DEBUG - Message Received of type PING
+2018-03-14 22:00:44,705 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:00:45,102 - root - DEBUG - Message Received of type PING
+2018-03-14 22:00:54,707 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:00:54,881 - root - DEBUG - Message Received of type PING
+2018-03-14 22:01:04,708 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:01:04,881 - root - DEBUG - Message Received of type PING
+2018-03-14 22:01:14,710 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:01:14,905 - root - DEBUG - Message Received of type PING
+2018-03-14 22:01:24,711 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:01:24,839 - root - DEBUG - Message Received of type PING
+2018-03-14 22:01:34,712 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:01:34,895 - root - DEBUG - Message Received of type PING
+2018-03-14 22:01:44,758 - root - INFO - Creating Flask init_app
+2018-03-14 22:01:44,926 - root - INFO - Registering Blueprints
+2018-03-14 22:01:45,019 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:01:45,019 - root - INFO - Starting Flask Server
+2018-03-14 22:01:45,235 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:01:50,397 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-14 22:01:50,398 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-14 22:01:50,942 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:01:50] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 22:01:54,715 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:01:54,919 - root - DEBUG - Message Received of type PING
+2018-03-14 22:02:04,715 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:02:04,920 - root - DEBUG - Message Received of type PING
+2018-03-14 22:02:11,431 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:02:11] "GET /devPanel/Routers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 500 -
+2018-03-14 22:02:14,716 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:02:14,854 - root - DEBUG - Message Received of type PING
+2018-03-14 22:02:24,717 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:02:24,900 - root - DEBUG - Message Received of type PING
+2018-03-14 22:02:34,718 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:02:34,889 - root - DEBUG - Message Received of type PING
+2018-03-14 22:02:44,719 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:02:44,901 - root - DEBUG - Message Received of type PING
+2018-03-14 22:02:54,721 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:02:54,935 - root - DEBUG - Message Received of type PING
+2018-03-14 22:03:02,219 - root - INFO - Creating Flask init_app
+2018-03-14 22:03:02,335 - root - INFO - Registering Blueprints
+2018-03-14 22:03:02,448 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:03:02,449 - root - INFO - Starting Flask Server
+2018-03-14 22:03:02,647 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:03:04,722 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:03:04,893 - root - DEBUG - Message Received of type PING
+2018-03-14 22:03:07,071 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:03:07] "GET /devPanel/Routers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 500 -
+2018-03-14 22:03:14,722 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:03:14,904 - root - DEBUG - Message Received of type PING
+2018-03-14 22:03:18,823 - root - INFO - Creating Flask init_app
+2018-03-14 22:03:18,998 - root - INFO - Registering Blueprints
+2018-03-14 22:03:19,103 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:03:19,103 - root - INFO - Starting Flask Server
+2018-03-14 22:03:19,254 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:03:21,783 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:03:21] "GET /devPanel/Routers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:03:24,723 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:03:24,882 - root - DEBUG - Message Received of type PING
+2018-03-14 22:03:34,724 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:03:34,938 - root - DEBUG - Message Received of type PING
+2018-03-14 22:03:44,725 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:03:44,872 - root - DEBUG - Message Received of type PING
+2018-03-14 22:03:54,023 - root - INFO - Creating Flask init_app
+2018-03-14 22:03:54,150 - root - INFO - Registering Blueprints
+2018-03-14 22:03:54,374 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:03:54,375 - root - INFO - Starting Flask Server
+2018-03-14 22:03:54,556 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:03:54,728 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:03:54,884 - root - DEBUG - Message Received of type PING
+2018-03-14 22:03:56,592 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:03:56] "GET /devPanel/Routers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:04:04,728 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:04:05,096 - root - DEBUG - Message Received of type PING
+2018-03-14 22:04:14,730 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:04:14,908 - root - DEBUG - Message Received of type PING
+2018-03-14 22:04:24,730 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:04:24,864 - root - DEBUG - Message Received of type PING
+2018-03-14 22:04:34,731 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:04:34,876 - root - DEBUG - Message Received of type PING
+2018-03-14 22:04:44,733 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:04:44,910 - root - DEBUG - Message Received of type PING
+2018-03-14 22:04:54,734 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:04:54,888 - root - DEBUG - Message Received of type PING
+2018-03-14 22:05:04,735 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:05:04,933 - root - DEBUG - Message Received of type PING
+2018-03-14 22:05:14,736 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:05:14,979 - root - DEBUG - Message Received of type PING
+2018-03-14 22:05:24,737 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:05:24,890 - root - DEBUG - Message Received of type PING
+2018-03-14 22:05:34,738 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:05:34,902 - root - DEBUG - Message Received of type PING
+2018-03-14 22:05:44,739 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:05:44,903 - root - DEBUG - Message Received of type PING
+2018-03-14 22:05:54,740 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:05:54,937 - root - DEBUG - Message Received of type PING
+2018-03-14 22:06:04,743 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:06:04,915 - root - DEBUG - Message Received of type PING
+2018-03-14 22:06:14,743 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:06:14,915 - root - DEBUG - Message Received of type PING
+2018-03-14 22:06:24,744 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:06:24,938 - root - DEBUG - Message Received of type PING
+2018-03-14 22:06:34,745 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:06:34,928 - root - DEBUG - Message Received of type PING
+2018-03-14 22:06:44,746 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:06:44,939 - root - DEBUG - Message Received of type PING
+2018-03-14 22:06:54,747 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:06:54,931 - root - DEBUG - Message Received of type PING
+2018-03-14 22:07:04,748 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:07:04,996 - root - DEBUG - Message Received of type PING
+2018-03-14 22:07:14,749 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:07:14,952 - root - DEBUG - Message Received of type PING
+2018-03-14 22:07:24,750 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:07:24,953 - root - DEBUG - Message Received of type PING
+2018-03-14 22:07:34,751 - root - DEBUG - Message Received of type LOGDATA
+2018-03-14 22:07:34,975 - root - DEBUG - Message Received of type PING
+2018-03-14 22:14:01,977 - root - INFO - Creating Flask init_app
+2018-03-14 22:14:02,107 - root - INFO - Registering Blueprints
+2018-03-14 22:14:02,189 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:14:02,189 - root - INFO - Starting Flask Server
+2018-03-14 22:14:02,364 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:14:09,595 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:14:09] "GET /devPanel/Router/SCC33102_R01?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:14:20,410 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:14:20] "GET /devPanel/Router/SCC33102_R01/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 404 -
+2018-03-14 22:14:29,782 - root - INFO - Creating Flask init_app
+2018-03-14 22:14:30,128 - root - INFO - Registering Blueprints
+2018-03-14 22:14:30,343 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:14:30,344 - root - INFO - Starting Flask Server
+2018-03-14 22:14:30,526 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:14:36,234 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:14:36] "GET /devPanel/Router/SCC33102_R01/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:14:44,596 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:14:44] "GET /devPanel/Router//?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 404 -
+2018-03-14 22:19:18,593 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:19:18] "GET /devPanel/Router/SCC33102_R01/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:19:35,031 - root - INFO - Creating Flask init_app
+2018-03-14 22:19:35,134 - root - INFO - Registering Blueprints
+2018-03-14 22:19:35,231 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:19:35,232 - root - INFO - Starting Flask Server
+2018-03-14 22:19:35,403 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:19:39,931 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:19:39] "GET /devPanel/Router/SCC33102_R01/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:21:46,227 - root - INFO - Creating Flask init_app
+2018-03-14 22:21:46,367 - root - INFO - Registering Blueprints
+2018-03-14 22:22:35,782 - root - INFO - Creating Flask init_app
+2018-03-14 22:22:35,920 - root - INFO - Registering Blueprints
+2018-03-14 22:22:36,033 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:22:36,033 - root - INFO - Starting Flask Server
+2018-03-14 22:22:36,246 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:22:39,087 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:22:39] "GET /devPanel/Server?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 301 -
+2018-03-14 22:22:39,207 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:22:39] "GET /devPanel/Server/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 500 -
+2018-03-14 22:25:53,500 - root - INFO - Creating Flask init_app
+2018-03-14 22:25:53,638 - root - INFO - Registering Blueprints
+2018-03-14 22:25:53,728 - root - INFO - Starting Flask Server
+2018-03-14 22:25:53,728 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:25:53,829 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:25:57,557 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:25:57] "GET /devPanel/Server?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 301 -
+2018-03-14 22:25:57,665 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:25:57] "GET /devPanel/Server/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:29:02,662 - root - INFO - Creating Flask init_app
+2018-03-14 22:29:02,791 - root - INFO - Registering Blueprints
+2018-03-14 22:29:02,893 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:29:02,893 - root - INFO - Starting Flask Server
+2018-03-14 22:29:03,080 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:29:06,032 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:29:06] "GET /devPanel/Server?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 301 -
+2018-03-14 22:29:06,130 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:29:06] "GET /devPanel/Server/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:40:28,295 - root - INFO - Creating Flask init_app
+2018-03-14 22:40:28,436 - root - INFO - Registering Blueprints
+2018-03-14 22:40:28,540 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:40:28,540 - root - INFO - Starting Flask Server
+2018-03-14 22:40:28,712 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:40:39,440 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:40:39] "GET /devPanel/Server/Stop?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:41:02,098 - root - INFO - Creating Flask init_app
+2018-03-14 22:41:02,224 - root - INFO - Registering Blueprints
+2018-03-14 22:41:02,332 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:41:02,332 - root - INFO - Starting Flask Server
+2018-03-14 22:41:02,494 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:41:13,937 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:41:13] "GET /devPanel/Server/Stop?token=eyJbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 401 -
+2018-03-14 22:41:20,757 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:41:20] "GET /devPanel/Server/Stop?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -
+2018-03-14 22:42:36,642 - root - INFO - Creating Flask init_app
+2018-03-14 22:42:36,776 - root - INFO - Registering Blueprints
+2018-03-14 22:52:53,435 - root - INFO - Creating Flask init_app
+2018-03-14 22:52:53,553 - root - INFO - Registering Blueprints
+2018-03-14 22:53:34,908 - root - INFO - Creating Flask init_app
+2018-03-14 22:53:35,046 - root - INFO - Registering Blueprints
+2018-03-14 22:53:35,156 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:53:35,156 - root - INFO - Starting Flask Server
+2018-03-14 22:53:35,370 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:53:41,320 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:53:41] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 22:55:10,728 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:55:10] "POST /router/get_actuators HTTP/1.1" 500 -
+2018-03-14 22:55:44,957 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:55:44] "POST /router/get_actuators HTTP/1.1" 200 -
+2018-03-14 22:59:26,900 - root - INFO - Creating Flask init_app
+2018-03-14 22:59:27,053 - root - INFO - Registering Blueprints
+2018-03-14 22:59:27,153 - root - INFO - Connected to MQTT Broker
+2018-03-14 22:59:27,153 - root - INFO - Starting Flask Server
+2018-03-14 22:59:27,373 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 22:59:39,996 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:59:39] "POST /devPanel/Router/SCC33102_R01?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 405 -
+2018-03-14 22:59:44,568 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:59:44] "GET /devPanel/Router/SCC33102_R01?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 301 -
+2018-03-14 22:59:44,671 - werkzeug - INFO - 127.0.0.1 - - [14/Mar/2018 22:59:44] "GET /devPanel/Router/SCC33102_R01/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.3mtTvgIG_r3HJCNu4XIIN7n3jbvxc_9bsSVmiiEyNtc HTTP/1.1" 200 -

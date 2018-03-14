@@ -6,6 +6,7 @@ from database.database import db
 from routes.debug import debug
 from routes.user import user
 from routes.api import api
+from routes.developPanel import developPanel
 from routes.router import router_route
 from routes.sensor import sensor_route
 from routes.admin import admin_route
@@ -19,7 +20,7 @@ fhandler = logging.FileHandler(filename='mylog.log', mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)
-logger.addHandler(DBLogger())
+
 logger.setLevel(logging.DEBUG)
 
 
@@ -54,12 +55,13 @@ def register_blueprints(app):
     app.register_blueprint(debug)
     app.register_blueprint(user)
     app.register_blueprint(api)
+    app.register_blueprint(developPanel)
     app.register_blueprint(router_route)
     app.register_blueprint(sensor_route)
     app.register_blueprint(admin_route)
     app.register_blueprint(historic)
 
-
+logger.addHandler(DBLogger())
 app = create_app()
 
 if __name__ == '__main__':

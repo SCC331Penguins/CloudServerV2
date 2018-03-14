@@ -13,7 +13,8 @@ def on_message(client, userdata, message):
     topic = message.topic
     if (message.topic in config.ADMIN_CHANNELS) is True:
         return
-    message = json.loads(message.payload)
+    print()
+    message = json.loads(str(message.payload)[2:-1])
     mess = MessageHandler(message)
     res = mess.perform()
     if res is not None:

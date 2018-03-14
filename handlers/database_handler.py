@@ -1,6 +1,6 @@
 from database.database import db
 from passlib.apps import custom_app_context as pwd_context
-from util.auth.authenticator import *
+from util.auth import authenticator
 from sqlalchemy.exc import IntegrityError
 import time
 
@@ -120,7 +120,7 @@ class DatabaseHandler():
                 return [(False, "User does not exist")]
             user = self.get_user(username)
             if pwd_context.verify(password, user.password) is True:
-                return [(True, generate_token(user.id))]
+                return [(True, authenticator.generate_token(user.id))]
             return [(False, "Incorrect password")]
 
         # Get the user by their username
@@ -300,7 +300,16 @@ class DatabaseHandler():
                 return None
             return result
 
-        # Add a Log Message to DB
-        def add_warning_record(self,record, originName, originType):
-            db.session.add(self.Warnings(record['level'],record['message'], record['time'], originType, originName))
-            pass
+        # ---Dev Panel
+        def getAllRouters(self):
+            return db.session.query(self.Router).all()
+
+        def getAllRouterWarnings(self):
+            return db.session.query(self.Warnings).filter(self.Warnings.originType == "Router").all()
+
+        def getRouter(self, r_id):
+            return db.session.query(self.Router).filter(self.Router.router_id == r_id).one()
+
+        def getRouterWarnings(self, r_id):
+            return db.session.query(self.Warnings).filter(self.Warnings.originName == r_id).all()
+
