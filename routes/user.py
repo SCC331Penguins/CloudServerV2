@@ -55,7 +55,7 @@ def claim_router():
 @print_request
 def authenticate_user():
     router_id = request.json['router_id']
-    username = request.json['user']
+    username = request.json['username']
     result = DatabaseHandler().get_user(username=username)
     if result is None:
         return jsonify(result=False), 200
@@ -70,10 +70,18 @@ def authenticate_user():
 @print_request
 def remove_authenticated_user():
     router_id = request.json['router_id']
-    username = request.json['user']
+    username = request.json['username']
     result = DatabaseHandler().get_user(username=username)
     if result is None:
         return jsonify(result=False), 200
     id = result.id
     result = DatabaseHandler().remove_auth_user(id, router_id)
     return jsonify(result=result), 200
+
+
+@user.route("/auth_user_remove", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+@print_request
+def remove_authenticated_user():
+    
