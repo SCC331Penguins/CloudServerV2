@@ -54,6 +54,9 @@ def ROOM_REQUEST(message):
     print("MESSAGE TO SEND" + str(message_to_send))
     return message_to_send
 
+def SEND_LOG_DATA(message):
+    print(message)
+    DatabaseHandler().add_warning_record(message.payload, "Router", message.payload['R_id'])
 
 # What to do with what type
 typeDict = {
@@ -63,6 +66,7 @@ typeDict = {
     MessageCreator.REG_ACTUATOR: REG_ACTUATOR,
     # MessageCreator.SAVE_DATA: SAVE_DATA,
     MessageCreator.ROOM_REQUEST: ROOM_REQUEST,
+    MessageCreator.SEND_LOG_DATA:SEND_LOG_DATA
 }
 
 
@@ -75,8 +79,9 @@ class MessageHandler():
 
     def perform(self):
         s = typeDict.get(self.type)
+        print(self.payload)
         if s is not None:
-            logger.debug("Message Recieved of type %s", self.type)
+            logger.debug("Message Received of type %s", self.type)
             return s(self)
         return None
 

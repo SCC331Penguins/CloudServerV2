@@ -18,6 +18,7 @@ class MessageCreator():
     ARM_SYSTEM = "ARM"
     ROOM_REQUEST = "ROOMREQ"
     ROOM_RESPONSE = "ROOMRSP"
+    SEND_LOG_DATA = "LOGDATA"
 
     def __init__(self, type, payload):
         self.type = type

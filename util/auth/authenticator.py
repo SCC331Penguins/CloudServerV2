@@ -67,3 +67,15 @@ def requires_admin(f):
             return jsonify(False), 200
         return f(*args, **kwargs)
     return admin
+
+def requires_dev_admin(f):
+    @wraps(f)
+    def admin(*args, **kwargs):
+        # token comes from query string instead of POST body because i want to do authorised GET Requests
+        id = verify_token(request.args.get('token'))
+        if id is False:
+            return jsonify(False), 401
+        if DatabaseHandler().check_admin(id) is False:
+            return jsonify(False), 401
+        return f(*args, **kwargs)
+    return admin

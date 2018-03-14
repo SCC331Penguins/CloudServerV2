@@ -129,6 +129,22 @@ class SensorRooms(db.Model):
     def __repr__(self):
         return '<Room: %r, Sensor ID: %r>' % (self.room, self.sensor_id)
 
+# Warnings Table
+class Warnings(db.Model):
+    w_id = db.Column(db.Integer, primary_key=True)
+    w_level = db.Column(db.Integer)
+    w_msg = db.Column(db.String(400))
+    w_time = db.Column(db.BigInteger)
+    originType = db.Column(db.String(40))
+    originName = db.Column(db.String(40))
+    def __init__(self, w_level, w_msg, w_time, originType, originName):
+        self.w_level = w_level
+        self.w_msg = w_msg
+        self.w_time = w_time
+        self.originType = originType
+        self.originName = originName
+    def __repr__(self):
+        return '<Warning: %r>' % self.originName
 
 class RouterAuthUsers(db.Model):
     router_id = db.Column(db.String(40),primary_key=True)

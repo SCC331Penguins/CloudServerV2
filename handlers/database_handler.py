@@ -20,8 +20,7 @@ class DatabaseHandler():
         def __init__(self):
             from database.models import (Users, Router, UserRouters,
                                          RouterSensors, Sensor, Actuator,
-                                         Script, PhoneToken, SensorRooms,
-                                         RouterAuthUsers)
+                                         Script, PhoneToken, SensorRooms, RouterAuthUsers, Warnings)
             self.Users = Users
             self.Router = Router
             self.UserRouters = UserRouters
@@ -32,6 +31,7 @@ class DatabaseHandler():
             self.PhoneToken = PhoneToken
             self.Rooms = SensorRooms
             self.RouterAuth = RouterAuthUsers
+            self.Warnings = Warnings
             pass
 
         # Get user routers
@@ -128,7 +128,7 @@ class DatabaseHandler():
             user = self.get_user(username)
             if pwd_context.verify(password, user.password) is True:
                 return [(True, authenticator.generate_token(user.id))]
-            return [(False, "Incorrect password")]            
+            return [(False, "Incorrect password")]
 
         # Get the user by their username
         def get_user(self, username):
@@ -333,3 +333,16 @@ class DatabaseHandler():
             if len(result) == 0:
                 return None
             return result
+
+        # ---Dev Panel
+        def getAllRouters(self):
+            return db.session.query(self.Router).all()
+
+        def getAllRouterWarnings(self):
+            return db.session.query(self.Warnings).filter(self.Warnings.originType == "Router").all()
+
+        def getRouter(self, r_id):
+            return db.session.query(self.Router).filter(self.Router.router_id == r_id).one()
+
+        def getRouterWarnings(self, r_id):
+            return db.session.query(self.Warnings).filter(self.Warnings.originName == r_id).all()
