@@ -19,7 +19,7 @@ class DatabaseHandler():
         def __init__(self):
             from database.models import (Users, Router, UserRouters,
                                          RouterSensors, Sensor, Actuator,
-                                         Script, PhoneToken, SensorRooms)
+                                         Script, PhoneToken, SensorRooms, Warnings)
             self.Users = Users
             self.Router = Router
             self.UserRouters = UserRouters
@@ -29,6 +29,7 @@ class DatabaseHandler():
             self.Script = Script
             self.PhoneToken = PhoneToken
             self.Rooms = SensorRooms
+            self.Warnings = Warnings
             pass
 
         # Get user routers
@@ -298,3 +299,8 @@ class DatabaseHandler():
             if len(result) == 0:
                 return None
             return result
+
+        # Add a Log Message to DB
+        def add_warning_record(self,record, originName, originType):
+            db.session.add(self.Warnings(record['level'],record['message'], record['time'], originType, originName))
+            pass

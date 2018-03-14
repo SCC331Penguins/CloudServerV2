@@ -4390,3 +4390,104 @@
 2018-03-13 23:22:52,708 - root - INFO - Starting Flask Server
 2018-03-13 23:22:52,708 - root - INFO - Connected to MQTT Broker
 2018-03-13 23:22:52,715 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-13 23:30:45,874 - root - INFO - Creating Flask init_app
+2018-03-13 23:30:47,038 - root - INFO - Registering Blueprints
+2018-03-13 23:30:47,046 - root - INFO - Starting Flask Server
+2018-03-13 23:30:47,051 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-13 23:30:47,052 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:14:13,915 - root - INFO - Creating Flask init_app
+2018-03-14 00:15:30,434 - root - INFO - Creating Flask init_app
+2018-03-14 00:16:29,326 - root - INFO - Creating Flask init_app
+2018-03-14 00:16:29,372 - root - INFO - Registering Blueprints
+2018-03-14 00:19:29,012 - root - INFO - Creating Flask init_app
+2018-03-14 00:19:29,172 - root - INFO - Registering Blueprints
+2018-03-14 00:19:29,182 - root - INFO - Starting Flask Server
+2018-03-14 00:19:29,187 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 00:19:29,187 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:24:59,719 - root - INFO - Creating Flask init_app
+2018-03-14 00:24:59,778 - root - INFO - Registering Blueprints
+2018-03-14 00:24:59,786 - root - INFO - Starting Flask Server
+2018-03-14 00:24:59,787 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:24:59,792 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 00:29:58,602 - root - INFO - Creating Flask init_app
+2018-03-14 00:29:58,653 - root - INFO - Registering Blueprints
+2018-03-14 00:29:58,664 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:29:58,664 - root - INFO - Starting Flask Server
+2018-03-14 00:29:58,674 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 00:33:32,330 - root - INFO - Creating Flask init_app
+2018-03-14 00:33:32,383 - root - INFO - Registering Blueprints
+2018-03-14 00:33:32,392 - root - INFO - Starting Flask Server
+2018-03-14 00:33:32,392 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:33:32,402 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 00:37:56,938 - root - INFO - Creating Flask init_app
+2018-03-14 00:37:57,010 - root - INFO - Registering Blueprints
+2018-03-14 00:37:57,023 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:37:57,024 - root - INFO - Starting Flask Server
+2018-03-14 00:37:57,031 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 00:39:26,149 - root - INFO - Creating Flask init_app
+2018-03-14 00:39:26,201 - root - INFO - Registering Blueprints
+2018-03-14 00:39:26,214 - root - INFO - Starting Flask Server
+2018-03-14 00:39:26,215 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:39:26,225 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 00:39:54,190 - root - INFO - Creating Flask init_app
+2018-03-14 00:39:54,252 - root - INFO - Registering Blueprints
+2018-03-14 00:39:54,262 - root - INFO - Connected to MQTT Broker
+2018-03-14 00:39:54,263 - root - INFO - Starting Flask Server
+2018-03-14 00:39:54,273 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 01:14:03,411 - root - INFO - Creating Flask init_app
+2018-03-14 01:20:32,943 - root - INFO - Creating Flask init_app
+2018-03-14 01:20:32,983 - root - INFO - Registering Blueprints
+2018-03-14 01:20:32,999 - root - INFO - Starting Flask Server
+2018-03-14 01:20:33,000 - root - INFO - Connected to MQTT Broker
+2018-03-14 01:20:33,006 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 01:20:51,392 - root - INFO - Creating Flask init_app
+2018-03-14 01:21:01,529 - root - INFO - Creating Flask init_app
+2018-03-14 01:21:01,564 - root - INFO - Registering Blueprints
+2018-03-14 01:21:03,048 - root - INFO - Connected to MQTT Broker
+2018-03-14 01:21:03,048 - root - INFO - Starting Flask Server
+2018-03-14 01:21:03,054 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 01:21:56,404 - root - INFO - Creating Flask init_app
+2018-03-14 01:21:56,452 - root - INFO - Registering Blueprints
+2018-03-14 01:21:56,470 - root - INFO - Connected to MQTT Broker
+2018-03-14 01:21:56,470 - root - INFO - Starting Flask Server
+2018-03-14 01:21:56,476 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 01:22:14,274 - root - INFO - Creating Flask init_app
+2018-03-14 01:22:14,315 - root - INFO - Registering Blueprints
+2018-03-14 01:22:14,333 - root - INFO - Starting Flask Server
+2018-03-14 01:22:14,339 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 01:22:14,339 - root - INFO - Connected to MQTT Broker
+2018-03-14 01:22:27,279 - root - INFO - Creating Flask init_app
+2018-03-14 01:22:27,358 - root - INFO - Registering Blueprints
+2018-03-14 01:22:27,509 - root - INFO - Connected to MQTT Broker
+2018-03-14 01:22:27,510 - root - INFO - Starting Flask Server
+2018-03-14 01:22:27,516 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 01:29:39,050 - root - INFO - Creating Flask init_app
+2018-03-14 01:29:39,099 - root - INFO - Registering Blueprints
+2018-03-14 01:29:39,122 - root - INFO - Connected to MQTT Broker
+2018-03-14 01:29:39,123 - root - INFO - Starting Flask Server
+2018-03-14 01:29:39,129 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 01:29:49,698 - root - INFO - Creating Flask init_app
+2018-03-14 01:29:49,747 - root - INFO - Registering Blueprints
+2018-03-14 01:29:49,901 - root - INFO - Starting Flask Server
+2018-03-14 01:29:49,901 - root - INFO - Connected to MQTT Broker
+2018-03-14 01:29:49,910 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 12:16:43,252 - root - INFO - Creating Flask init_app
+2018-03-14 12:16:44,275 - root - INFO - Registering Blueprints
+2018-03-14 12:16:45,076 - root - INFO - Starting Flask Server
+2018-03-14 12:16:45,077 - root - INFO - Connected to MQTT Broker
+2018-03-14 12:16:47,226 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 12:19:45,589 - root - INFO - Creating Flask init_app
+2018-03-14 12:19:45,629 - root - INFO - Registering Blueprints
+2018-03-14 12:19:45,651 - root - INFO - Connected to MQTT Broker
+2018-03-14 12:19:45,651 - root - INFO - Starting Flask Server
+2018-03-14 12:19:45,656 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 12:20:47,219 - root - INFO - Creating Flask init_app
+2018-03-14 12:20:47,274 - root - INFO - Registering Blueprints
+2018-03-14 12:20:47,294 - root - INFO - Connected to MQTT Broker
+2018-03-14 12:20:47,295 - root - INFO - Starting Flask Server
+2018-03-14 12:20:47,299 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)
+2018-03-14 12:26:29,286 - root - INFO - Creating Flask init_app
+2018-03-14 12:26:29,335 - root - INFO - Registering Blueprints
+2018-03-14 12:26:29,351 - root - INFO - Starting Flask Server
+2018-03-14 12:26:29,351 - root - INFO - Connected to MQTT Broker
+2018-03-14 12:26:29,358 - werkzeug - INFO -  * Running on http://localhost:5001/ (Press CTRL+C to quit)

@@ -10,6 +10,7 @@ from routes.router import router_route
 from routes.sensor import sensor_route
 from routes.admin import admin_route
 from routes.historic import historic
+from util.db_logger import DBLogger
 import logging
 import config
 
@@ -18,6 +19,7 @@ fhandler = logging.FileHandler(filename='mylog.log', mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)
+logger.addHandler(DBLogger())
 logger.setLevel(logging.DEBUG)
 
 
@@ -26,13 +28,15 @@ def create_app():
     app = Flask(__name__)
     app.config.from_pyfile('config.py')
     CORS(app)
-    db.init_app(app)
+    with app.app_context():
+        db.init_app(app)
     flask_admin = Admin(app)
     with app.test_request_context():
-        from database.models import Users, Router, Sensor
+        from database.models import Users, Router, Sensor, Warnings
         flask_admin.add_view(ModelView(Users, db.session))
         flask_admin.add_view(ModelView(Router, db.session))
         flask_admin.add_view(ModelView(Sensor, db.session))
+        flask_admin.add_view(ModelView(Warnings, db.session))
         register_blueprints(app)
         db.create_all()
         from MQTT.mqtt_client import client
