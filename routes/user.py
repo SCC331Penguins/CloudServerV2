@@ -47,3 +47,33 @@ def claim_router():
         send_message_admin(
             "USER CLAIM", "By user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(request.json['router_id']))
     return jsonify(result=resp), 200
+
+
+@user.route("/auth_user_add", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+@print_request
+def authenticate_user():
+    router_id = request.json['router_id']
+    username = request.json['user']
+    result = DatabaseHandler().get_user(username=username)
+    if result is None:
+        return jsonify(result=False), 200
+    id = result.id
+    result = DatabaseHandler().add_auth_user(id, router_id)
+    return jsonify(result=result), 200
+
+
+@user.route("/auth_user_remove", methods=['POST'])
+@authenticator.requires_token
+@authenticator.requires_ownership
+@print_request
+def remove_authenticated_user():
+    router_id = request.json['router_id']
+    username = request.json['user']
+    result = DatabaseHandler().get_user(username=username)
+    if result is None:
+        return jsonify(result=False), 200
+    id = result.id
+    result = DatabaseHandler().remove_auth_user(id, router_id)
+    return jsonify(result=result), 200

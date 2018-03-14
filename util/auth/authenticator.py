@@ -33,6 +33,20 @@ def requires_token(f):
     return check
 
 
+def requires_auth(f):
+    @wraps(f)
+    def check_auth(*args, **kwargs):
+        res = DatabaseHandler().user_has_router(user_id=request.json['token'], router_id=request.json['router_id'])
+        if res is False:
+            authed = DatabaseHandler().user_has_auth(user_id=request.json['token'], router_id=request.json['router_id'])
+            if authed is False:
+                return jsonify(False), 200
+        return f(*args, **kwargs)
+    return check_auth
+
+
+
+
 def requires_ownership(f):
     @wraps(f)
     def check(*args, **kwargs):

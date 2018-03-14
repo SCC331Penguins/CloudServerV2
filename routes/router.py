@@ -35,7 +35,7 @@ def set_script():
             scripts_list.append(x.script)
         message = MessageCreator(MessageCreator.UPDATE_SCRIPT, scripts_list)
         send_message(router_id, message)
-    send_message_admin("POST SCRIPT", "Nw script added by user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(router_id))
+    send_message_admin("POST SCRIPT", "New script added by user " + DatabaseHandler().get_user_from_id(request.json['token']) + " to router " + str(router_id))
     return jsonify(res), 200
 
 
@@ -51,7 +51,7 @@ def get_script():
 
 @router_route.route("/get_actuators", methods=['POST'])
 @authenticator.requires_token
-@authenticator.requires_ownership
+@authenticator.requires_auth
 @print_request
 def get_actuators():
     res = DatabaseHandler().get_actuators(request.json['router_id'])

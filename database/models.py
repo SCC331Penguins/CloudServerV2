@@ -1,4 +1,5 @@
 from database.database import db
+import json
 
 """
 Remember to run this on database change:
@@ -127,6 +128,18 @@ class SensorRooms(db.Model):
 
     def __repr__(self):
         return '<Room: %r, Sensor ID: %r>' % (self.room, self.sensor_id)
+
+
+class RouterAuthUsers(db.Model):
+    router_id = db.Column(db.String(40),primary_key=True)
+    user_id = db.Column(db.Integer, primary_key=True)
+
+    def __init__(self, router_id, user_id):
+        self.router_id = router_id
+        self.user_id = user_id
+
+    def __repr__(self):
+        return '<Router: %s, Users: %s>' % (self.router_id, str(self.user_id))
 
 
 db.create_all()

@@ -3,6 +3,7 @@ from passlib.apps import custom_app_context as pwd_context
 from util.auth import authenticator
 from sqlalchemy.exc import IntegrityError
 import time
+import json
 
 """
 FLASK DATABASE HANDLER
@@ -19,7 +20,8 @@ class DatabaseHandler():
         def __init__(self):
             from database.models import (Users, Router, UserRouters,
                                          RouterSensors, Sensor, Actuator,
-                                         Script, PhoneToken, SensorRooms)
+                                         Script, PhoneToken, SensorRooms,
+                                         RouterAuthUsers)
             self.Users = Users
             self.Router = Router
             self.UserRouters = UserRouters
@@ -29,15 +31,21 @@ class DatabaseHandler():
             self.Script = Script
             self.PhoneToken = PhoneToken
             self.Rooms = SensorRooms
+            self.RouterAuth = RouterAuthUsers
             pass
 
         # Get user routers
         def get_user_routers(self, id):
             routers = db.session.query(self.UserRouters).filter(self.UserRouters.user_id == id).all()
-            if self.check_result(routers) is None:
-                return []
             return_result = []
+            authed_routers = self.get_authed_routers(id)
+            print("Authed routers " + str(authed_routers))
             for x in routers[:]:
+                rl = []
+                rl.append(x.router_id)
+                rl.append(self.get_router_status(x.router_id))
+                return_result.append(rl)
+            for x in authed_routers[:]:
                 rl = []
                 rl.append(x.router_id)
                 rl.append(self.get_router_status(x.router_id))
@@ -292,6 +300,25 @@ class DatabaseHandler():
             if user is None:
                 return "Removed User"
             return user.username
+
+        def get_authed_routers(self, user_id):
+            authed_routers = db.session.query(self.RouterAuth).filter(self.RouterAuth.user_id == user_id).all()
+            return authed_routers
+
+        def user_has_auth(self, user_id, router_id):
+            auth  = db.session.query(self.RouterAuth.router_id == router_id and self.RouterAuth.user_id == user_id).first()
+            if first is None:
+                return False
+            return True
+
+        def remove_auth_user(self, user_id, router_id):
+            auth = db.session.query(self.RouterAuth).filter(self.RouterAuth.router_id == router_id and self.RouterAuth.user_id == user_id).delete()
+            db.session.commit()
+            return True
+
+        def add_auth_user(self, user_id, router_id):
+            authed_user = self.RouterAuth(router_id, user_id)
+            return self.add(authed_user)
 
         # Check multiple query result
         def check_result(self, result):

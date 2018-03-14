@@ -51,16 +51,6 @@ def close_admin_link(topic_name):
     config.ADMIN_CHANNELS.remove(topic_name)
     client.unsubscribe(topic_name)
 
-
-"""
-        "last_heard": 1520610729,
-        "online": false,
-        "owner": "Stouty",
-        "router_id": "SCC33102_R01",
-        "sensors": 4
-"""
-
-
 def send_router_update(router, remove=None):
     if remove is None:
         return
@@ -106,7 +96,7 @@ def send_user_update(username, remove=None, id=None):
         print(payload)
     for channel in config.ADMIN_CHANNELS[:]:
         client.publish(channel, json.dumps(payload))
-
+        
 
 def send_admin_update(username, admin):
     payload = {"type": "USERUPDADM", "username": username, "admin": admin}

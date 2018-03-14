@@ -1,5 +1,6 @@
-2018-03-14 13:08:34,374 - root - INFO - Creating Flask init_app
-2018-03-14 13:08:34,431 - root - INFO - Registering Blueprints
-2018-03-14 13:08:34,447 - root - INFO - Starting Flask Server
-2018-03-14 13:08:34,447 - root - INFO - Connected to MQTT Broker
-2018-03-14 13:08:34,591 - werkzeug - INFO -  * Running on http://192.168.0.114:5001/ (Press CTRL+C to quit)
+2018-03-14 14:56:40,249 - root - INFO - Creating Flask init_app
+2018-03-14 14:56:40,296 - root - INFO - Registering Blueprints
+2018-03-14 14:56:40,312 - root - INFO - Connected to MQTT Broker
+2018-03-14 14:56:40,313 - root - INFO - Starting Flask Server
+2018-03-14 14:56:40,475 - werkzeug - INFO -  * Running on http://192.168.0.114:5001/ (Press CTRL+C to quit)
+2018-03-14 14:56:41,932 - werkzeug - INFO - 192.168.0.114 - - [14/Mar/2018 14:56:41] "POST /router/get_router HTTP/1.1" 200 -

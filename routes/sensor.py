@@ -11,7 +11,7 @@ sensor_route = Blueprint('sensor_route', __name__, url_prefix='/sensor')
 # get sensors of a router
 @sensor_route.route('/get_sensors', methods=['POST'])
 @authenticator.requires_token
-@authenticator.requires_ownership
+@authenticator.requires_auth
 @print_request
 def get_sensors():
     result = DatabaseHandler().get_router_sensors(request.json['router_id'])
@@ -23,6 +23,7 @@ def get_sensors():
 # set config for sensors
 @sensor_route.route("/set_config", methods=['POST'])
 @authenticator.requires_token
+@authenticator.requires_ownership
 @print_request
 def set_config():
     sensors = request.json["sensors"]
