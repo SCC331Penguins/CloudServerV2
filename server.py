@@ -25,7 +25,7 @@ def create_app():
     logger.info("Creating Flask init_app")
     app = Flask(__name__)
     app.config.from_pyfile('config.py')
-    CORS(app)
+    CORS(app, resources=r"/*")
     db.init_app(app)
     flask_admin = Admin(app)
     with app.test_request_context():
