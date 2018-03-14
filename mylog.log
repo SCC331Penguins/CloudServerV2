@@ -1,6 +1,15 @@
-2018-03-14 14:56:40,249 - root - INFO - Creating Flask init_app
-2018-03-14 14:56:40,296 - root - INFO - Registering Blueprints
-2018-03-14 14:56:40,312 - root - INFO - Connected to MQTT Broker
-2018-03-14 14:56:40,313 - root - INFO - Starting Flask Server
-2018-03-14 14:56:40,475 - werkzeug - INFO -  * Running on http://192.168.0.114:5001/ (Press CTRL+C to quit)
-2018-03-14 14:56:41,932 - werkzeug - INFO - 192.168.0.114 - - [14/Mar/2018 14:56:41] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 18:50:56,545 - root - INFO - Creating Flask init_app
+2018-03-14 18:50:56,597 - root - INFO - Registering Blueprints
+2018-03-14 18:50:56,615 - root - INFO - Starting Flask Server
+2018-03-14 18:50:56,615 - root - INFO - Connected to MQTT Broker
+2018-03-14 18:50:56,792 - werkzeug - INFO -  * Running on http://192.168.0.114:5001/ (Press CTRL+C to quit)
+2018-03-14 18:50:57,969 - root - DEBUG - Message Recieved of type PING
+2018-03-14 18:50:58,687 - passlib.registry - DEBUG - registered 'sha512_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2018-03-14 18:50:58,687 - passlib.registry - DEBUG - registered 'sha256_crypt' handler: <class 'passlib.handlers.sha2_crypt.sha256_crypt'>
+2018-03-14 18:50:59,498 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:50:59] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 18:51:02,123 - root - DEBUG - Message Recieved of type DATA
+2018-03-14 18:51:04,828 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:51:04] "POST /user/login HTTP/1.1" 200 -
+2018-03-14 18:51:05,226 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:51:05] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 18:51:05,266 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:51:05] "POST /function/update_token HTTP/1.1" 404 -
+2018-03-14 18:51:05,359 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:51:05] "POST /router/get_router HTTP/1.1" 200 -
+2018-03-14 18:51:11,730 - werkzeug - INFO - 192.168.0.108 - - [14/Mar/2018 18:51:11] "POST /user/login HTTP/1.1" 200 -
