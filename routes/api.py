@@ -40,7 +40,6 @@ def set_rooms():
 @api.route("/phone_location", methods=['POST'])
 @authenticator.requires_token
 @authenticator.requires_ownership
-@print_request
 def phone_location():
     router_id = request.json['router_id']
     message = MessageCreator(MessageCreator.PHONE_LOCATION, request.json['sensor_id'])

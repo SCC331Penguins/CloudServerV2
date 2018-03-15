@@ -156,10 +156,14 @@ class DatabaseHandler():
                 return False
             c = db.session.query(self.UserRouters).filter(
                 self.UserRouters.router_id == router_id and
-                self.UserRouters.user_id == user_id).first()
+                self.UserRouters.user_id == user_id).all()
             if c is None:
                 return False
-            return True
+            for r in c[:]:
+                if r.router_id == router_id:
+                    if r.user_id == user_id:
+                        return True
+            return False
 
         def get_sensors(self):
             sensors = db.session.query(self.Sensor).all()
@@ -315,7 +319,7 @@ class DatabaseHandler():
 
         def user_has_auth(self, user_id, router_id):
             auth  = db.session.query(self.RouterAuth.router_id == router_id and self.RouterAuth.user_id == user_id).first()
-            if first is None:
+            if auth is None:
                 return False
             return True
 
